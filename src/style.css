@@ -394,24 +394,24 @@ header #header-title .name-title{
     }
 
 
-.circle-text1{
+    #header-title .circle-text1{
     height: 1150px;
     width: 1150px;
     position: relative;
-            animation: rotateText 20s linear infinite;
-}  
+    animation: rotateText 20s linear infinite;
+    }  
 
-@keyframes rotateText{
-    0%{
-                transform: rotate(360deg);
+    @keyframes rotateText{
+        0%{
+                    transform: rotate(360deg);
+        }
+        100%{
+                    transform:rotate(0deg);
+        }
     }
-    100%{
-                transform:rotate(0deg);
-    }
-}
 
-#about .distortion{
-    min-width: 400px;
-    height: 400px;
-    position: absolute;
-}
+    #header-title .distortion{
+        min-width: 900px;
+        height: 900px;
+        position: absolute;
+    }
