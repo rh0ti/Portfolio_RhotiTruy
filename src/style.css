@@ -33,6 +33,7 @@ body{
     text-align: center;
     color: #FFFFFF;
     background-color: #000000;
+  
 }
 
 header{
@@ -41,8 +42,28 @@ header{
     align-items: center;
     flex-direction: column;
     border: 1px white solid;
+    position: relative;
+
 
 }
+
+
+/* Button to Top */
+
+#topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px; 
+    width: 50px;
+    height: 50px;
+    background:#FFFFFF;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 
 /* ---------------------------------------------------- Navigation ----------------------------------------------------*/
 
@@ -96,7 +117,7 @@ nav .line1{
     margin: 5px;
     background: #FFFFFF;
     position: absolute;
-    top: 6.5%;
+    top: 2.5%;
     right:30px;
     z-index: 90;
 }
@@ -107,7 +128,7 @@ nav .line2{
     margin: 5px;
     background: #FFFFFF;
     position: absolute;
-    top: 6.5%;
+    top: 2.5%;
     left:30px;
     z-index: 90;
 }
@@ -116,8 +137,9 @@ nav .line2{
 header #header-title{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding-top: 100px;
 }
 
 header #header-title .name-title{
@@ -160,7 +182,7 @@ header #header-title .name-title{
     display: flex;
     justify-content: center;
     /* border: 1px white solid; */
-    padding: 40px;
+    padding: 50px
 }
 
 .introduction-text p{
@@ -172,7 +194,7 @@ header #header-title .name-title{
     
 }
 
-/* ----------------- Line FIGURES -------------------*/
+/* ----------------- HEADER LINE FIGURES -------------------*/
 
 .header-line{
     display: flex;
@@ -192,7 +214,7 @@ header #header-title .name-title{
 
 }
 
-.header-line .line-x1{
+.header-line .line-x1-middle{
     border-left: 3px solid #FFFFFF;
     height: 40px;
     position: absolute;
@@ -201,13 +223,34 @@ header #header-title .name-title{
     transform: rotate(45deg);
 }
 
-.header-line .line-x2{
+.header-line .line-x2-middle{
     border-left: 3px solid #FFFFFF;
     height: 40px;
     position: absolute;
     left: 50%;
     margin-left: -3px;
     transform: rotate(-45deg);
+}
+
+.header-line .line-x3-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+}
+
+.header-line .line-x4-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+
 }
 
 .header-line .vertical-line-small-2{
@@ -223,22 +266,22 @@ header #header-title .name-title{
 
 .header-line .line-x3{
     border-left: 3px solid #FFFFFF;
-    height: 20px;
+    height: 30px;
     position: absolute;
     left: 90%;
     margin-left: -3px;
     transform: rotate(45deg);
-    top: 60%;
+    top: 25%;
 }
 
 .header-line .line-x4{
     border-left: 3px solid #FFFFFF;
-    height: 20px;
+    height: 30px;
     position: absolute;
     left: 90%;
     margin-left: -3px;
     transform: rotate(-45deg);
-    top: 60%;
+    top: 25%;
 }
 
 .header-line .line-x5{
@@ -248,7 +291,7 @@ header #header-title .name-title{
     left: 20%;
     margin-left: -3px;
     transform: rotate(45deg);
-    top: 20%;
+    top: 6%;
 }
 
 .header-line .line-x6{
@@ -258,10 +301,49 @@ header #header-title .name-title{
     left: 20%;
     margin-left: -3px;
     transform: rotate(-45deg);
-    top: 20%;
+    top: 6%;
 
 }
 
+.header-line .line-x7{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 60%;
+}
+
+.header-line .line-x8{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 60%;
+}
+
+.header-line .line-x9{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 70%;
+}
+
+.header-line .line-x10{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 70%;
+}
 
 .header-line .line-star1{
     border-left: 2px solid #FFFFFF;
@@ -291,15 +373,18 @@ header #header-title .name-title{
     transform: rotate(-45deg);
 }
 
+
+
+
 .figure-star{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
-    left: 10%;
+    left: 5%;
     margin-left: -3px;
-    top: 50%;
+    top: 20%;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
 
@@ -320,9 +405,9 @@ header #header-title .name-title{
     align-items: center;
     width: 100px;
     height: 100px;
-    right: 10%;
+    right: 5%;
     margin-left: -3px;
-    top: 20%;
+    top: 6%;
     position: absolute;
     animation: rotateText1 5s linear infinite;
 
@@ -337,14 +422,116 @@ header #header-title .name-title{
     }
 }  
 
-.header-line .vertical-line-left{
+.figure-star3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    margin-left: -3px;
+    top: 45%;
+    position: absolute;
+    animation: rotateStar 10s linear infinite;
+
+}
+
+@keyframes rotateStar{
+    0%{
+                transform: rotate(-360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+.figure-star4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 10%;
+    margin-left: -3px;
+    top: 90%;
+    position: absolute;
+    animation: rotateText1 5s linear infinite;
+
+}
+
+@keyframes rotateText1{
+    0%{
+                transform: rotate(-360deg);
+    }
+    100%{
+                transform:rotate(-0deg);
+    }
+}  
+
+.figure-star5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 20%;
+    margin-left: -3px;
+    top: 43%;
+    position: absolute;
+    animation: rotateStern 5s linear infinite;
+}
+
+@keyframes rotateStern{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(-0deg);
+    }
+}  
+
+.figure-star6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    margin-left: -3px;
+    top: 90%;
+    position: absolute;
+    animation: rotateStern 5s linear infinite;
+}
+
+@keyframes rotateStern{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(-0deg);
+    }
+}  
+
+.header-line .vertical-line-right{
     height: 950px;
     border-left: #FFFFFF 3px solid;
     position: absolute;
     left: 98%;
-    top: 50%;
+    top: 19%;
 
 }
+
+.header-line .vertical-line-left{
+    height: 950px;
+    border-left: #FFFFFF 3px solid;
+    position: absolute;
+    right: 98%;
+    top: 35%;
+
+}
+
+ /* ----------------------------  Title ------------------------------*/
+
 
 .title-text{
     padding-top: 150px;
@@ -354,7 +541,7 @@ header #header-title .name-title{
 .title-text .creative-h1{
     font-size: 100px;
     font-family: 'Braston';
-    padding-right: 25%;
+    padding-right: 340px;
 
 }
 
@@ -362,7 +549,7 @@ header #header-title .name-title{
     font-size: 40px;
     font-family: 'Audhistine';
     color: #8AAED5;
-    padding-right: 13%;
+    padding-right: 25%;
 
 }
 
@@ -375,7 +562,7 @@ header #header-title .name-title{
 
 }
 
-    /* Circle Text DIV / IMG */
+    /* ----------------------------  Circle Text DIV / IMG ------------------------------*/
 
     #header-title .circle-text{
         /* background-color: yellow; */
@@ -384,6 +571,7 @@ header #header-title .name-title{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 200px;
         /* transition: 0.8s;
         opacity: 0; */
     }
@@ -395,8 +583,8 @@ header #header-title .name-title{
 
 
     #header-title .circle-text1{
-    height: 1150px;
-    width: 1150px;
+    height: 1000px;
+    width: 1000px;
     position: relative;
     animation: rotateText 20s linear infinite;
     }  
@@ -411,7 +599,214 @@ header #header-title .name-title{
     }
 
     #header-title .distortion{
-        min-width: 900px;
-        height: 900px;
+        min-width: 800px;
+        height: 800px;
         position: absolute;
     }
+
+
+ /*--------------------------DESKTOP - Section ABOUT - Second Page ----------------------------- */
+
+
+ #about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px white; 
+    position: relative; 
+    height: 100vh;
+}
+
+
+
+
+/* Circle Text DIV / IMG */
+
+
+#about .story-text{
+    /* background-color: yellow; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 200px;
+    width: 100%;
+}  
+
+/* Story Text - big circle and my story DIV */
+
+#about .my-story{
+    /* background-color: white;  */
+    width: 50%;
+    height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}  
+
+#about .circle-text2{
+    /* background-color: aqua;
+    border: pink solid 1px; */
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 800px;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    /* transition: 0.8s;
+    opacity: 0; */
+}
+
+#about .circle-text2[data-scroll="in"]{
+    opacity: 1;
+    -webkit-transition-delay: 1.2s;
+         -o-transition-delay: 1.2s;
+            transition-delay: 1.2s;
+}
+    
+#about .circle-text-image{
+    border-radius: 90%;
+    width: 700px;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    -webkit-animation: rotateImage 20s linear infinite;
+            animation: rotateImage 20s linear infinite;
+}   
+
+@-webkit-keyframes rotateImage{
+    0%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+}   
+
+@keyframes rotateImage{
+    0%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+}
+
+#about .circle-image-big{
+    border-radius: 90%;
+    width: 550px;
+    height: 550px;
+    background-image: url(/images/bw1.png);
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+}    
+
+@media screen and (max-width:1500px){  
+
+    #about .circle-text-image{
+        width: 600px;
+        height: 600px;
+    }   
+    
+    #about .circle-image-big{
+        width: 450px;
+        height: 450px;
+    }    
+}
+
+@media screen and (max-width:1200px){  
+
+    #about .circle-text-image{
+        width: 450px;
+        height: 450px;
+    }   
+    
+    #about .circle-image-big{
+        width: 350px;
+        height: 350px;
+    }    
+}
+
+@media screen and (max-width:915px){  
+
+    #about .circle-text-image{
+        width: 350px;
+        height: 350px;
+    }   
+    #about .circle-image-big{
+        width: 250px;
+        height: 250px;
+    }    
+}
+
+
+@media screen and (max-width:1090px){ 
+
+    .my-story h2{
+        font-size: 90px;
+        font-weight: lighter;
+        color: #FFFFFF;
+        max-width: 500px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:915px){ 
+
+    .my-story h2{
+        font-size: 70px;
+        font-weight: lighter;
+        color: #FFFFFF;
+        max-width: 500px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.my-story p{
+    /* border: black solid 1px; */
+    font-size: 25px;
+    font-display: block;
+    max-width: 500px;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    /* transition: 0.8s;
+    opacity: 0; */
+}
+
+.my-story p[data-scroll="in"]{
+    opacity: 1;
+    -webkit-transition-delay: 0.9s;
+         -o-transition-delay: 0.9s;
+            transition-delay: 0.9s;
+}
+
+
