@@ -111,6 +111,9 @@ ul li .li-down{
   }
 
 
+
+
+
 /* Linien */
 
 nav .line1{
@@ -135,7 +138,31 @@ nav .line2{
     z-index: 90;
 }
 
+.animation1{
+    position:absolute;
+    height: 15%;
+    width: 20%;
+    top:0%;
+    /* background-color: aqua; */
+}
 
+.animation2{
+    position:absolute;
+    height: 25%;
+    width: 30%;
+    z-index: 1000;
+    left: 15%;
+    top: 20%;
+    /* background-color: aqua; */
+}
+
+.animation3{
+    position:absolute;
+    height: 30%;
+    width: 100%;
+    top:34.5%;
+    z-index: 9;
+}
 /* ---------------------------------------------------- Desktop - Section HEADER TITLE  ----------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -145,6 +172,7 @@ header #header-title{
     align-items: center;
     flex-direction: column;
     padding-top: 100px;
+    z-index: 10;
 }
 
 header #header-title .name-title{
@@ -1012,7 +1040,7 @@ header #header-title .name-title{
     border: solid 1px white; 
     position: relative; 
     /* background-color: #8AAED5; */
-    height: 350vh;
+    height: 100%;
 }
 
 .row {
@@ -1072,4 +1100,9 @@ header #header-title .name-title{
 
  .gallery-image:hover{
     width: 95%;
+ }
+
+ .gallery-image a{
+    text-decoration: none;
+    color: #FFFFFF;
  }
