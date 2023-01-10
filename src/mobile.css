@@ -1,0 +1,993 @@
+/* ---------------------------------------------------- My CSS Reset --------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	}
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+  
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px white solid; */
+    /* position: relative; */
+
+
+}
+
+
+/* ------------- Button to Top -------------*/
+
+#topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px; 
+    width: 50px;
+    height: 50px;
+    background:#FFFFFF;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
+/* ---------------------------------MOBILE - Grid - Whole Webpage ------------------------------------*/
+
+#content{
+    display: grid;
+    grid-template-columns: 375px;
+    grid-gap: 10px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+#content >*{
+    background: #000000;         
+} 
+
+
+
+/* ---------------------------------------------------- Desktop - Section NAVIGATION ----------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+ul li a{
+    padding: 25px 5px;
+}
+
+ul li .li-down2{
+    position: relative;
+    margin: 30px;
+    left: 20%;
+    /* border: #FFFFFF 1px solid; */
+}
+
+
+#moon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 white;
+    left: -4%;
+    top: -135px;;
+    z-index: 99999;
+  }
+
+
+/* Linien */
+
+nav .line1{
+    width:35%;
+    right:10px;
+}
+
+nav .line2{
+    width:35%;
+    left:10px;
+}
+
+/* ------------------------- 3D ANIMATION ------------------------------*/
+
+
+.animation2{
+    width:100%;
+    top: 37%;
+    /* background-color: aqua; */
+    padding-bottom: 100px;
+}
+
+.animation3{
+display: none;
+}
+/* ---------------------------------------------------- Desktop - Section HEADER TITLE  ----------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+header #header-title{
+    padding-top: 0px;
+}
+
+header #header-title .name-title{
+    font-size: 50px;
+}
+
+
+
+
+/* ------------------------- HEADER LINE FIGURES ------------------------------*/
+
+.header-line{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px white solid; */
+    height: 400px;
+}
+
+/* ---------------- Small Vertical Lines Middle Figures  ---------------------*/
+
+
+.header-line .vertical-line-small-1{
+    height: 90px;
+
+}
+
+.header-line .vertical-line-small-2{
+display: none;
+
+}
+
+/* ------------------------------ Big X Figures  -----------------------------*/
+
+.header-line .line-x1-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+}
+
+.header-line .line-x2-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+}
+
+/* ------------------------------ Big X Figures 2  ----------------------------*/
+
+.header-line .line-x3-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 32%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+}
+
+.header-line .line-x4-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 32%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+
+}
+
+/* ------------------------------ Small X Figures  ----------------------------*/
+
+.header-line .line-x3{
+    border-left: 3px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 25%;
+}
+
+.header-line .line-x4{
+    border-left: 3px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 25%;
+}
+
+.header-line .line-x5{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    left: 20%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 6%;
+}
+
+.header-line .line-x6{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    left: 20%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 6%;
+
+}
+
+.header-line .line-x7{
+    border-left: 3px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.header-line .line-x8{
+    border-left: 3px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+.header-line .line-x9{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 70%;
+}
+
+.header-line .line-x10{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 70%;
+}
+
+/* ---------------------------- Small Stars Figures  ---------------------------------*/
+
+.header-line .line-star1{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+
+}
+
+.header-line .line-star2{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-90deg);
+
+}.header-line .line-star3{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(0deg);
+}
+
+.header-line .line-star4{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+
+.figure-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 5%;
+    margin-left: -3px;
+    top: 20%;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+.figure-star2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 15%;
+    margin-left: -3px;
+    top: 6%;
+    position: absolute;
+    animation: rotateText1 5s linear infinite;
+
+}
+
+@keyframes rotateText1{
+    0%{
+                transform: rotate(-360deg);
+    }
+    100%{
+                transform:rotate(-0deg);
+    }
+}  
+
+.figure-star3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 0%;
+    margin-left: -3px;
+    top: 50%;
+    position: absolute;
+    animation: rotateStar 10s linear infinite;
+
+}
+
+@keyframes rotateStar{
+    0%{
+                transform: rotate(-360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+.figure-star4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 15%;
+    margin-left: -3px;
+    top: 93%;
+    position: absolute;
+    animation: rotateText1 5s linear infinite;
+
+}
+
+@keyframes rotateText1{
+    0%{
+                transform: rotate(-360deg);
+    }
+    100%{
+                transform:rotate(-0deg);
+    }
+}  
+
+.figure-star5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 10%;
+    margin-left: -3px;
+    top: 168%;
+    position: absolute;
+    animation: rotateStern 5s linear infinite;
+}
+
+@keyframes rotateStern{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(-0deg);
+    }
+}  
+
+.figure-star6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    margin-left: -3px;
+    top: 143%;
+    position: absolute;
+    animation: rotateStern 5s linear infinite;
+}
+
+@keyframes rotateStern{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(-0deg);
+    }
+}  
+
+/* ----------------------------- Big Vertical Lines Figures  -------------------------------*/
+
+.header-line .vertical-line-right{
+display: none;
+
+}
+
+.header-line .vertical-line-left{
+display: none;
+
+}
+
+
+
+ /* ------------------------------------  Title Text ------------------------------------*/
+
+
+.title-text{
+    padding-top: 150px;
+
+}
+
+.title-text .web-h1{
+    font-size: 40px;
+    font-family: 'Braston';
+
+}
+
+.title-text .designer-h2{
+    font-size: 20px;
+    font-family: 'Audhistine';
+    color: #8AAED5;
+    position: relative;
+    right: 80px;
+
+}
+
+.title-text .developer-h1{
+    font-size: 40px;
+    font-family: 'Braston';
+    position: relative;
+    top: -60px;
+    right: -85px;
+
+}
+
+    /* ----------------------------  Big Circle Text DIV / IMG ------------------------------*/
+
+    #header-title .circle-text{
+        /* background-color: yellow; */
+        min-height: 600px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        /* transition: 0.8s;
+        opacity: 0; */
+    }
+
+    #header-title .circle-text[data-scroll="in"]{
+        opacity: 1;
+        transition-delay: 0.8s;
+    }
+
+
+    #header-title .circle-text1{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    animation: rotateText 20s linear infinite;
+    }  
+
+    @keyframes rotateText{
+        0%{
+                    transform: rotate(360deg);
+        }
+        100%{
+                    transform:rotate(0deg);
+        }
+    }
+
+    #header-title .distortion{
+        min-width: 270px;
+        height: 270px;
+        position: absolute;
+    }
+
+
+/* ---------------------------------------------------- Desktop - Section ABOUT  ----------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+ #about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid 1px white;  */
+    position: relative; 
+    height: 150vh;
+}
+
+
+/* -------------- Small Circle Text DIV / IMG ------------------- */
+
+
+#about .story-text{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}  
+
+/* ----------- Story Text / Small circle / My story DIV ---------*/
+
+#about .my-story{
+    /* background-color: green;  */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+}  
+
+#about .circle-text2{
+    /* background-color: aqua;
+    border: pink solid 1px; */
+    width: 100%;
+    /* transition: 0.8s;
+    opacity: 0; */
+}
+
+
+/* --------------------------------------------------------- Desktop - Section CV  ---------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#cv{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px white;  */
+    position: relative; 
+    height: 100%;
+    /* background-color: #8AAED5; */
+}
+
+ /* ------------------------------------  CV Title Text ------------------------------------*/
+
+
+ #cv .title-text{
+    /* background-color: aqua; */
+    padding-top: 0%;
+
+}
+
+#cv .title-text .creative-h1{
+    font-size: 50px;
+    font-family: 'Braston';
+    padding-right: 0px;
+
+}
+
+#cv .title-text h2{
+    font-size: 20px;
+    font-family: 'Audhistine';
+    color: #8AAED5;
+    padding-right: 50%;
+
+}
+
+#cv .title-text .designer-h1{
+    font-size: 50px;
+    font-family: 'Braston';
+    position: relative;
+    top: -65px;
+    right: -50px;
+
+}
+
+/* ------------------------------ CV -  Big X Figures 3  ----------------------------*/
+
+
+ 
+#cv  .figure-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 38%;
+    top: 22%;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+#cv .figure-star2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 37%;
+    top:110%;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+/* ------------------------------ CV - Downloads/Links/Image  ----------------------------*/
+
+#cv .cv-downloads{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cv .cv-downloads a{
+    text-decoration-line: none;
+    font-family: 'Braston';
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+
+/*--------------------------------------------------------DESKTOP - ANIMATION------------------------------------------------------------- */
+
+#animation{
+    height: 25vh;
+    z-index: 9999;
+}
+
+/* --------------------------------------------------------- Desktop - Section PROJECTS  ---------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+#projects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid 1px white;  */
+    position: relative; 
+    /* background-color: #8AAED5; */
+    height: 100%;
+}
+
+
+.title-text .projects-h1{
+    font-size: 50px;
+    font-family: 'Braston';
+    position: absolute;
+    right: 200px;
+    top: 1.8%;
+
+
+}
+
+.title-text .and-h2{
+    font-size: 20px;
+    font-family: 'Audhistine';
+    color: #8AAED5;
+    position: absolute;
+    top: 145px;
+    left: 90px;
+
+
+}
+
+.title-text .designs-h1{
+    font-size: 50px;
+    font-family: 'Braston';
+    position: absolute;
+    top: 200px;
+    right: 5px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 40px 40px;
+  }
+  
+  .column img {
+    margin-top: 100px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .gallery-image{
+    transition: transform 1.5s;
+
+  }
+
+  .gallery-image h1{
+    text-align: left;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+  .gallery-image p{
+    text-align: left;
+    font-style: italic;
+  }
+
+ .gallery-image img{
+    filter: grayscale(100%);
+ }
+
+ .gallery-image img:hover{
+    filter: none;
+    
+ }
+
+ .gallery-image:hover{
+    /* width: 95%; */
+    transform: scale(0.9);
+ }
+
+ .gallery-image a{
+    text-decoration: none;
+    color: #FFFFFF;
+ }
+
+ /* ---------------------------- Small Stars Figures  ---------------------------------*/
+
+#projects .title-text .line-star1{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+
+}
+
+#projects .title-text .line-star2{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-90deg);
+
+}#projects .title-text .line-star3{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(0deg);
+}
+
+#projects .title-text .line-star4{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+ 
+ 
+#projects .title-text .figure-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 70%;
+    top: 90px;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+#projects .title-text .figure-star2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 20%;
+    top: 15%;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+
+.header-line .line-x7{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 60%;
+}
+
+.header-line .line-x8{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 60%;
+}
+
+.header-line .line-x9{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 70%;
+}
+
+.header-line .line-x10{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 70%;
+}
+
+ /* --------------------------------------------------------- Desktop - Section CONTACT  ---------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid 1px white;  */
+    position: relative; 
+    /* background-color: #8AAED5; */
+    height:80vh;
+}
+
+#contact .introduction-text{
+    position: absolute;
+    top: 30%;
+}
+
+#contact .header-line .line-x3-middle, #contact .header-line .line-x4-middle{
+    display: none;
+}
+/* --------------------------------------------------------- Desktop - Section FOOTER  ---------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+footer .social-media{
+    height: 100px;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    
+footer .social-media a{
+    font-size: 3em; 
+    color: white;
+}
+
+footer .social-media a:hover i{
+    transform:scale(0.8);
+    transition: 1s;
+}

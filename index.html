@@ -7,7 +7,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" media="all" href="src/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="src/mobile.css">
     <title>Document</title>
 </head>
 <body>
@@ -29,32 +30,26 @@
                         <ul>
                             <li><a href="#about">About</a></li>
                             <li><a class="li-down" href="#cv">CV</a></li>
-                            <div id="moon"></div>
-                            <li><a class="li-down" href="#projects">Projects</a></li>
+                            <li><a class="li-down2" href="#projects">Projects</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
-                        <!-- <button class="sidebarBtn">
-                            <span></span>
-                        </button>   -->
                     </div>
-                    <figure class="line1"></figure> 
-                    <figure class="line2"></figure>
 
-                    
-                    <!-- Linien -->
+                    <div id="nav-line">
+                        <figure class="line1"></figure> 
+                        <div id="moon"></div>
+                        <figure class="line2"></figure>  
+                    </div>
+
                 </nav>
-
-
                     <!-- Hier kommen die 3D Animationen -->
-                    <div class="animation1">
+                    <!-- <div class="animation1">
                         <iframe src='https://my.spline.design/1copy-96bf3b36fdb2d95918dca034886e98c7/' frameborder='0' width='100%' height='100%'></iframe>
-                    </div>
+                    </div> -->
                     <div class="animation2">
                         <iframe src='https://my.spline.design/noisedisplacecopy-0853c5e4226a078b5af82355500ea84f/' frameborder='0' width='100%' height='100%'></iframe>
                     </div>
                     <div class="animation3">
-                        <!-- <iframe src='https://my.spline.design/lightingbunnycopy-b53c0cc57ed9f31d3112e2cf24cfe16c/' frameborder='0' width='100%' height='100%'></iframe> -->
-                        <!-- <iframe src='https://my.spline.design/1copy-d7a1cc8e04969c1d7aa95d4ccf16dd87/' frameborder='0' width='100%' height='100%'></iframe> -->
                         <iframe src='https://my.spline.design/2-79c4eb2d7ba59edbe17ef52c249c7f24/' frameborder='0' width='100%' height='100%'></iframe>
                     </div>
 
@@ -62,8 +57,9 @@
                 <section id="header-title">
                     <h1 class="name-title">Rhoti.Truy</h1>
                     <div class="introduction-text">
-                        <p>Hi, I’m Rhoti Truy and welcome to my Portfolio Website. </p>
+                        <p>Hi, I’m Rhottana Truy (Rhoti), and welcome to my portfolio website. </p>
                     </div>
+                    <!-- Linien -->
                     <div class="header-line">
                         <figure class="vertical-line-small-1"></figure>
                         <figure class="vertical-line-small-2"></figure>
@@ -141,9 +137,9 @@
                     <div class="3D-Animation3"></div>  
 
                     <div class="title-text">
-                        <h1 class="creative-h1">Creative</h1>
-                        <h2>Visual</h2>
-                        <h1 class="designer-h1">Designer</h1>
+                        <h1 class="web-h1">Web</h1>
+                        <h2 class="designer-h2">Designer</h2>
+                        <h1 class="developer-h1">Developer</h1>
                     </div>
 
                     <div class="circle-text">
@@ -160,15 +156,15 @@
                 <figure class="line4"></figure>
                 <div class="my-story">
                     <p class="one">
-                        “I’ve been singing as long as I can remember. I was always fascinated by music and there’s not a single day without music in my life.” -Sean Fernando-
+                        I'm 29 years old and recently completed my bachelor's degree in web development. Prior to my studies, I graduated from the KV Business School in Zurich and worked as an accountant and in the human resources department for over 5 years.
                     </p>
                     <br><br>
                     <p class="two">
-                        Sean is half Swiss and half Singhalese. He doesn’t really have a connection to his Singhalese roots. However, he wants to change that fact sometime soon and what could be of better support than music? 
+                        As a freelancer, I've had the opportunity to develop and design a variety of projects, such as CMS websites, custom websites, UI designs, logos, and a variety of graphic design projects.
                     </p>   
                     <br><br> 
                     <p class="three">
-                        To the question, what his goals are, he says: “My goals? Good question. I’m so close to achieving my goals and I’m lucky to be able to work with audio, whether it be as a singer, songwriter, producer or audio engineer, I can do it all.” 
+                        As a web developer, I enjoy transforming complex problems into simple and beautiful interface designs. I want to continue learning and growing as much as possible in order to work professionally as a web developer and designer in the future.
                     </p>                      
                 </div>      
                 <div class="circle-text2"> 
@@ -180,7 +176,7 @@
 
         <!-- Section CV -->
             <section id="cv">
-                                <div class="header-line">
+                <div class="header-line">
                     <figure class="vertical-line-small-1"></figure>
                     <figure class="vertical-line-small-2"></figure>
                     
@@ -203,32 +199,43 @@
 
                         <figure class="line-x9"></figure>
                         <figure class="line-x10"></figure>
+
+                        <div class="figure-star">
+                            <figure class="line-star1"></figure>
+                            <figure class="line-star2"></figure>
+                            <figure class="line-star3"></figure>
+                            <figure class="line-star4"></figure>
+                        </div>
+    
+                        <div class="figure-star2">
+                            <figure class="line-star1"></figure>
+                            <figure class="line-star2"></figure>
+                            <figure class="line-star3"></figure>
+                            <figure class="line-star4"></figure>
+                        </div>
                         
                 </div>
                 <div class="title-text">
-                    <h1 class="creative-h1">Curriculum</h1>
+                    <h1 class="creative-h1">Documents</h1>
                     <h2>Rhoti's</h2>
-                    <h1 class="designer-h1">Vitae</h1>
+                    <h1 class="designer-h1">CV</h1>
                     <figure class="line-x5-middle"></figure>
                     <figure class="line-x6-middle"></figure>
                 </div>
                 <div class="cv-downloads">
                     <div class="cv-file">
-                        <a href="/files/Truy_Rhottana_Lebenslauf Finale WEB.pdf" download>
+                        <a href="/files/Truy_Rhottana_Lebenslauf Finale WEB.pdf" target="_blank">
                             <h1>CV</h1>
-                            <img src="/images/cv-bild1.jpg" alt="CV" width="500" height="500">
                         </a>
                     </div>
                     <div class="github-link">
-                        <a href="https://github.com/rh0ti" target="_blank">
-                            <h1>GitHub</h1>
-                            <img src="/images/cv-bild2.jpg" alt="GitHub" width="500" height="500">
+                        <a href="/files/Diplome&Zertifikate_Rhottana_Truy.pdf" target="_blank">
+                            <h1>Certeficates</h1>
                         </a>
                     </div>
                     <div class="linkedin-link">
-                        <a href="https://www.linkedin.com/in/rhottana-truy/" target="_blank">
-                            <h1>LinkedIn</h1>
-                            <img src="/images/cv-bild3.jpg" alt="LinkedIn" width="500" height="500">
+                        <a href="/files/Arbeitszeugnisse_Rhottana_Truy.pdf" target="_blank">
+                            <h1>Reference</h1>
                         </a>
                     </div>
                 </div>
@@ -237,7 +244,7 @@
             <section id="animation">
                 <div class="animation-w">
                     <div class="animation animation2">
-                        <span>Rhoti Truy Portfolio 2022</span>
+                        <span>Rhoti Truy Portfolio 2023</span>
                     </div>
                 </div>
             </section>
@@ -246,12 +253,25 @@
         <!-- Section PROJECTS -->
             <section id="projects">
                 <div class="title-text">
-                    <h1 class="creative-h1">Projects</h1>
-                    <h2>And</h2>
-                    <h1 class="designer-h1">Designs</h1>
+                    <h1 class="projects-h1">Projects</h1>
+                    <h2 class="and-h2">And</h2>
+                    <h1 class="designs-h1">Designs</h1>
                     <figure class="line-x5-middle"></figure>
                     <figure class="line-x6-middle"></figure>
+                    <div class="figure-star">
+                        <figure class="line-star1"></figure>
+                        <figure class="line-star2"></figure>
+                        <figure class="line-star3"></figure>
+                        <figure class="line-star4"></figure>
+                    </div>
+                    <div class="figure-star2">
+                        <figure class="line-star1"></figure>
+                        <figure class="line-star2"></figure>
+                        <figure class="line-star3"></figure>
+                        <figure class="line-star4"></figure>
+                    </div>
                 </div>
+
                 <!-- Photo Grid -->
             <div class="row"> 
                 <div class="column">
@@ -288,7 +308,7 @@
                         </a>
                     </div>
                     <div class="gallery-image">
-                        <a href="https://www.pouyun-takeaway.ch/">
+                        <a href="https://www.pouyun-takeaway.ch/" target="_blank">
                             <img src="/images/bild5.png" style="width:100%">
                             <h1>pou yun take away</h1>
                             <br>
@@ -296,11 +316,11 @@
                         </a>
                     </div>
                     <div class="gallery-image">
-                        <a href="https://rhottanatruy.myportfolio.com/web-projekt-javascript" target="_blank">
+                        <a href="hhttps://rhottanatruy.myportfolio.com/" target="_blank">
                             <img src="/images/bild8.png" style="width:100%">
-                            <h1>silaryon</h1>
+                            <h1>old portfolio</h1>
                             <br>
-                            <p>custom website</p>
+                            <p>website</p>
                         </a>
                     </div>
                 </div>
@@ -346,21 +366,27 @@
                         <figure class="line-x3-middle"></figure>
                         <figure class="line-x4-middle"></figure>
                 </div>
-
                 <iframe src='https://my.spline.design/lightingbunnycopy-b53c0cc57ed9f31d3112e2cf24cfe16c/' frameborder='0' width='100%' height='60%'></iframe>
 
 
                 <div class="introduction-text">
-                    <p>Hi, I’m Rhoti Truy and welcome to my Portfolio Website. </p>
+                    <p>If you'd like to connect, please send me a message! I'm always happy to help others and to meet and learn from new people. </p>
                 </div>
+
             </section>
 
 
             <!-- Section FOOTER -->
             <footer>
-                <p>© 2022 Rhottana Truy </p>
-                <p class="portfolio">PORTFOLIO</p>   
+                <div class="social-media">
+                    <a href="https://github.com/rh0ti" target="_blank"><i class="fab fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/rhottana-truy/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <p>© 2023 Rhottana Truy | Portfolio</p> <br>
+
             </footer>
+
                 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

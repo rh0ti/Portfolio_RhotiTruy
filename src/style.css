@@ -79,7 +79,7 @@ header nav{
 header nav .sidebar ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
     /* border: 1px white solid; */
 
 }
@@ -90,35 +90,40 @@ ul li{
 
 ul li a{
     
-    padding: 50px 20px;
+    padding: 55px 20px;
     color: #FFFFFF;
     display: block;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     /* border: #FFFFFF 1px solid; */
 }
 
-ul li .li-down{
+ul li .li-down, .li-down2{
     margin: 30px;
     /* border: #FFFFFF 1px solid; */
+}
+
+#nav-line{
+    display: flex;
+    justify-content: center;
 }
 
 #moon {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    position: relative;
+    top: -170px;
+    left: -2%;
     box-shadow: 15px 15px 0 0 white;
   }
-
-
-
 
 
 /* Linien */
 
 nav .line1{
     height: 2px;
-    width:35%;
+    width:38%;
     margin: 5px;
     background: #FFFFFF;
     position: absolute;
@@ -129,7 +134,7 @@ nav .line1{
 
 nav .line2{
     height: 2px;
-    width:35%;
+    width:38%;
     margin: 5px;
     background: #FFFFFF;
     position: absolute;
@@ -138,13 +143,15 @@ nav .line2{
     z-index: 90;
 }
 
-.animation1{
+/* ------------------------- 3D ANIMATION ------------------------------*/
+
+/* .animation1{
     position:absolute;
-    height: 15%;
+    height: 50%;
     width: 20%;
-    top:125%;
-    /* background-color: aqua; */
-}
+    top:101%;
+    background-color: aqua; 
+} */
 
 .animation2{
     position:absolute;
@@ -583,27 +590,27 @@ header #header-title .name-title{
 
 }
 
-.title-text .creative-h1{
+.title-text .web-h1{
     font-size: 100px;
     font-family: 'Braston';
-    padding-right: 340px;
 
 }
 
-.title-text h2{
+.title-text .designer-h2{
     font-size: 40px;
     font-family: 'Audhistine';
     color: #8AAED5;
-    padding-right: 25%;
+    position: relative;
+    right: 150px;
 
 }
 
-.title-text .designer-h1{
+.title-text .developer-h1{
     font-size: 100px;
     font-family: 'Braston';
     position: relative;
     top: -138px;
-    right: -200px;
+    right: -220px;
 
 }
 
@@ -758,7 +765,7 @@ header #header-title .name-title{
     border-radius: 90%;
     width: 550px;
     height: 550px;
-    background-image: url(/images/bw1.png);
+    background-image: url(/images/bw3.png);
     background-position: top;
     background-size: cover;
     position: absolute;
@@ -910,6 +917,94 @@ header #header-title .name-title{
 
 }
 
+#cv .line-x3-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    bottom: -35%;
+
+}
+
+#cv .line-x4-middle{
+    border-left: 3px solid #FFFFFF;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    bottom: -35%;
+
+}
+
+#cv .header-line .line-x9{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+#cv .header-line .line-x10{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+
+ 
+#cv  .figure-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    top: 30%;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+#cv .figure-star2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 20%;
+    top: 45%;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
 /* ------------------------------ CV - Downloads/Links/Image  ----------------------------*/
 
 #cv .cv-downloads{
@@ -995,8 +1090,9 @@ header #header-title .name-title{
 
 
 
-/* --------------------------------------------------------- Desktop - Section CV  ---------------------------------------------------------*/
+/* --------------------------------------------------------- Desktop - Section PROJECTS  ---------------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 
 #projects{
@@ -1007,6 +1103,34 @@ header #header-title .name-title{
     position: relative; 
     /* background-color: #8AAED5; */
     height: 100%;
+}
+
+
+.title-text .projects-h1{
+    font-size: 100px;
+    font-family: 'Braston';
+    position: relative;
+    right: 160px;
+
+
+}
+
+.title-text .and-h2{
+    font-size: 40px;
+    font-family: 'Audhistine';
+    color: #8AAED5;
+    position: relative;
+    right: 100px;
+
+}
+
+.title-text .designs-h1{
+    font-size: 100px;
+    font-family: 'Braston';
+    position: relative;
+    top: -138px;
+    right: -160px;
+
 }
 
 .row {
@@ -1080,7 +1204,124 @@ header #header-title .name-title{
     color: #FFFFFF;
  }
 
- /* --------------------------------------------------------- Desktop - Section CV  ---------------------------------------------------------*/
+ /* ---------------------------- Small Stars Figures  ---------------------------------*/
+
+#projects .title-text .line-star1{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+
+}
+
+#projects .title-text .line-star2{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-90deg);
+
+}#projects .title-text .line-star3{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(0deg);
+}
+
+#projects .title-text .line-star4{
+    border-left: 2px solid #FFFFFF;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+ 
+ 
+#projects .title-text .figure-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    top: 100px;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+#projects .title-text .figure-star2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: 20%;
+    top: 15%;
+    position: absolute;
+    animation: rotateFigure 10s linear infinite;
+
+}
+
+@keyframes rotateFigure{
+    0%{
+                transform: rotate(360deg);
+    }
+    100%{
+                transform:rotate(0deg);
+    }
+}  
+
+
+.header-line .line-x7{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 60%;
+}
+
+.header-line .line-x8{
+    border-left: 3px solid #FFFFFF;
+    height: 40px;
+    position: absolute;
+    left: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 60%;
+}
+
+.header-line .line-x9{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(45deg);
+    top: 70%;
+}
+
+.header-line .line-x10{
+    border-left: 3px solid #FFFFFF;
+    height: 20px;
+    position: absolute;
+    right: 90%;
+    margin-left: -3px;
+    transform: rotate(-45deg);
+    top: 70%;
+}
+
+ /* --------------------------------------------------------- Desktop - Section CONTACT  ---------------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -1097,4 +1338,44 @@ header #header-title .name-title{
 #contact .introduction-text{
     position: absolute;
     top: 50%;
+}
+
+
+
+/* --------------------------------------------------------- Desktop - Section FOOTER  ---------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+}
+
+footer .social-media{
+    height: 300px;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    
+footer .social-media a{
+    font-size: 5em; 
+    color: white;
+}
+
+footer .social-media a:hover i{
+    transform:scale(0.8);
+    transition: 1s;
+}
+
+@media screen and (max-width:1000px){ 
+
+    #footer .social-media a{
+        font-size: 8em; 
+        color: white;
+    }
 }
