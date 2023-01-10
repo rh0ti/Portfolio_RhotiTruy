@@ -997,6 +997,16 @@ display:none;
     align-items: center; */
 }
 
+#contact .introduction-text a{
+    text-decoration: none;
+    position: absolute;
+    bottom: -80px;
+    color: white;
+    font-family: 'braston';
+    font-size: 30px;
+
+}
+
 #contact .header-line .line-x3-middle, #contact .header-line .line-x4-middle {
     display: none;
 }

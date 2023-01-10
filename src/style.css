@@ -1374,7 +1374,15 @@ width: 300px;
 
 }
 
+#contact .introduction-text a{
+    text-decoration: none;
+    position: absolute;
+    bottom: 190px;
+    color: white;
+    font-family: 'braston';
+    font-size: 40px;
 
+}
 
 
 
