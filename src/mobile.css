@@ -534,7 +534,7 @@ display: none;
     flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
-    height: 1100px;
+    height: 1400px;
     /* background-color: blue; */
 }
 
@@ -545,9 +545,11 @@ display: none;
 #about .story-text{
     /* background-color: yellow; */
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 1100px;
+    justify-content: space-around;
+    height: 1300px;
     width: 100%;
 }  
 
@@ -556,7 +558,7 @@ display: none;
 #about .my-story{
     /* background-color: rebeccapurple;  */
     width: 90%;
-    height: 700px;
+    height: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -668,7 +670,10 @@ display: none;
 
 /* ------------------------------ CV -  Big X Figures 3  ----------------------------*/
 
-
+#cv  .header-line .line-x9,#cv  .header-line .line-x10{
+    position: absolute;
+    top: 400px;
+}
  
 #cv  .figure-star{
     display: flex;
@@ -677,7 +682,7 @@ display: none;
     width: 100px;
     height: 100px;
     left: -3%;
-    top: 92%;
+    top: 59%;
     position: absolute;
     z-index: 999;
     animation: rotateFigure 10s linear infinite;
@@ -1004,9 +1009,10 @@ display:none;
 
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 20vh;
+    flex-direction: column;
+    height: 30vh;
 }
 
 footer .social-media{
