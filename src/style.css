@@ -33,8 +33,7 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     color: #FFFFFF;
-    background-color: #000000;
-  
+    background-color: #000000; 
 }
 
 header{
@@ -43,12 +42,9 @@ header{
     align-items: center;
     flex-direction: column;
     position: relative;
-
-
 }
 
-
-/* ------------- Button to Top -------------*/
+/* ---------------------------------------------------- Button to Top ----------------------------------------------------------------*/
 
 #topBtn{
     position: fixed;
@@ -64,11 +60,7 @@ header{
     border-radius: 50%;
 }
 
-/* --------------------------------------------------------------- Desktop --------------------------------------------------------------------------------------*/
-
-
-
-/* ---------------------------------------------------- Desktop - Section NAVIGATION ----------------------------------------------------*/
+/* ---------------------------------------------------- Desktop - SECTION NAVIGATION ----------------------------------------------------*/
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 header nav{
@@ -82,8 +74,6 @@ header nav .sidebar ul{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    /* border: 1px white solid; */
-
 }
 
 ul li{
@@ -91,18 +81,15 @@ ul li{
 }
 
 ul li a{
-    
     padding: 55px 20px;
     color: #FFFFFF;
     display: block;
     text-decoration: none;
     font-size: 14px;
-    /* border: #FFFFFF 1px solid; */
 }
 
 ul li .li-down, .li-down2{
     margin: 30px;
-    /* border: #FFFFFF 1px solid; */
 }
 
 #nav-line{
@@ -120,8 +107,7 @@ ul li .li-down, .li-down2{
     box-shadow: 15px 15px 0 0 white;
   }
 
-
-/* Linien */
+/* ---------------------------------------------------- Navigation Line ----------------------------------------------------------------*/
 
 nav .line1{
     height: 2px;
@@ -145,15 +131,7 @@ nav .line2{
     z-index: 90;
 }
 
-/* ------------------------- 3D ANIMATION ------------------------------*/
-
-/* .animation1{
-    position:absolute;
-    height: 50%;
-    width: 20%;
-    top:101%;
-    background-color: aqua; 
-} */
+/* ------------------------------------------------------ 3D ANIMATION ------------------------------------------------------------------*/
 
 .animation2{
     position:absolute;
@@ -173,7 +151,7 @@ nav .line2{
     left: 45%;
     z-index: 9;
 }
-/* ---------------------------------------------------- Desktop - Section HEADER TITLE  ----------------------------------------------------*/
+/* ---------------------------------------------------- Desktop - SECTION HEADER TITLE  ----------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 header #header-title{
@@ -220,7 +198,6 @@ header #header-title .name-title{
     }
 }
 
-
 .introduction-text{
     display: flex;
     justify-content: center;
@@ -232,14 +209,11 @@ header #header-title .name-title{
 .introduction-text p{
     height: 100px;
     width: 230px;
-    font-size: 23px ;
-    /* border: 1px white solid; */
-    /* text-align: left; */
-    
-    
+    font-size: 23px ;  
 }
 
-/* ------------------------- HEADER LINE FIGURES ------------------------------*/
+
+/* ---------------------------------------------------- SECTION HEADER - LINE FIGURES ----------------------------------------------------------------*/
 
 .header-line{
     display: flex;
@@ -249,7 +223,9 @@ header #header-title .name-title{
     height: 400px;
 }
 
-/* ---------------- Small Vertical Lines Middle Figures  ---------------------*/
+
+/* ---------------------------------------- SECTION HEADER - Small Vertical Lines Middle Figures -----------------------------------------------------*/
+
 
 .header-line .vertical-line-small-1{
     border-left: 3px solid #FFFFFF;
@@ -270,8 +246,7 @@ header #header-title .name-title{
     margin-top: 250px;
 
 }
-
-/* ------------------------------ Big X Figures  -----------------------------*/
+/* -------------------------------------------------- SECTION HEADER - Big X Figures  ---------------------------------------------------------------*/
 
 .header-line .line-x1-middle{
     border-left: 3px solid #FFFFFF;
@@ -291,7 +266,7 @@ header #header-title .name-title{
     transform: rotate(-45deg);
 }
 
-/* ------------------------------ Big X Figures 2  ----------------------------*/
+/* ------------------------------------------- SECTION HEADER -  Big X Figures 2 --------------------------------------------------------------------*/
 
 .header-line .line-x3-middle{
     border-left: 3px solid #FFFFFF;
@@ -314,7 +289,7 @@ header #header-title .name-title{
 
 }
 
-/* ------------------------------ Small X Figures  ----------------------------*/
+/* ------------------------------------------- SECTION HEADER -  Small X Figures --------------------------------------------------------------------*/
 
 .header-line .line-x3{
     border-left: 3px solid #FFFFFF;
@@ -397,14 +372,14 @@ header #header-title .name-title{
     top: 70%;
 }
 
-/* ---------------------------- Small Stars Figures  ---------------------------------*/
+/* ------------------------------------------- SECTION HEADER -  Small Stars Figures --------------------------------------------------------------------*/
+
 
 .header-line .line-star1{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
     transform: rotate(45deg);
-
 }
 
 .header-line .line-star2{
@@ -427,7 +402,6 @@ header #header-title .name-title{
     transform: rotate(-45deg);
 }
 
-
 .figure-star{
     display: flex;
     justify-content: center;
@@ -439,15 +413,14 @@ header #header-title .name-title{
     top: 20%;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
-
 }
 
 @keyframes rotateFigure{
     0%{
-                transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }  
 
@@ -467,10 +440,10 @@ header #header-title .name-title{
 
 @keyframes rotateText1{
     0%{
-                transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
     100%{
-                transform:rotate(-0deg);
+        transform:rotate(-0deg);
     }
 }  
 
@@ -485,7 +458,6 @@ header #header-title .name-title{
     top: 45%;
     position: absolute;
     animation: rotateStar 10s linear infinite;
-
 }
 
 @keyframes rotateStar{
@@ -508,15 +480,14 @@ header #header-title .name-title{
     top: 90%;
     position: absolute;
     animation: rotateText1 5s linear infinite;
-
 }
 
 @keyframes rotateText1{
     0%{
-                transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
     100%{
-                transform:rotate(-0deg);
+        transform:rotate(-0deg);
     }
 }  
 
@@ -535,10 +506,10 @@ header #header-title .name-title{
 
 @keyframes rotateStern{
     0%{
-                transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(-0deg);
+        transform:rotate(-0deg);
     }
 }  
 
@@ -564,7 +535,7 @@ header #header-title .name-title{
     }
 }  
 
-/* ----------------------------- Big Vertical Lines Figures  -------------------------------*/
+/* ------------------------------------------- SECTION HEADER -  Big Vertical Lines Figures --------------------------------------------------------------------*/
 
 .header-line .vertical-line-right{
     height: 950px;
@@ -572,7 +543,6 @@ header #header-title .name-title{
     position: absolute;
     left: 98%;
     top: 19%;
-
 }
 
 .header-line .vertical-line-left{
@@ -581,21 +551,17 @@ header #header-title .name-title{
     position: absolute;
     right: 98%;
     top: 35%;
-
 }
 
- /* ------------------------------------  Title Text ------------------------------------*/
-
+/* ----------------------------------------------------- SECTION HEADER -  Title Text --------------------------------------------------------------------------*/
 
 .title-text{
     padding-top: 150px;
-
 }
 
 .title-text .web-h1{
     font-size: 100px;
     font-family: 'Braston';
-
 }
 
 .title-text .designer-h2{
@@ -604,7 +570,6 @@ header #header-title .name-title{
     color: #8AAED5;
     position: relative;
     right: 150px;
-
 }
 
 .title-text .developer-h1{
@@ -613,10 +578,9 @@ header #header-title .name-title{
     position: relative;
     top: -138px;
     right: -220px;
-
 }
 
-    /* ----------------------------  Big Circle Text DIV / IMG ------------------------------*/
+/* -------------------------------------------------- SECTION HEADER -  Big Circle Text DIV / IMG  -------------------------------------------------------------*/
 
     #header-title .circle-text{
         /* background-color: yellow; */
@@ -634,7 +598,6 @@ header #header-title .name-title{
         opacity: 1;
         transition-delay: 0.8s;
     }
-
 
     #header-title .circle-text1{
     height: 1000px;
@@ -659,8 +622,8 @@ header #header-title .name-title{
     }
 
 
-/* ---------------------------------------------------- Desktop - Section ABOUT  ----------------------------------------------------*/
-/* ----------------------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------- Desktop - SECTION ABOUT  -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
  #about{
@@ -672,9 +635,7 @@ header #header-title .name-title{
     height: 800px;
 }
 
-
-/* -------------- Small Circle Text DIV / IMG ------------------- */
-
+/* ---------------------------------------- SECTION ABOUT -  Small Circle Text DIV / IMG ---------------------------------------------------------*/
 
 #about .story-text{
     /* background-color: yellow; */
@@ -683,7 +644,7 @@ header #header-title .name-title{
     width: 100%;
 }  
 
-/* ----------- Story Text / Small circle / My story DIV ---------*/
+/* ---------------------------------- SECTION ABOUT -  Story Text / Small circle / My story DIV  --------------------------------------------------*/
 
 #about .my-story{
     /* background-color: white;  */
@@ -700,15 +661,13 @@ header #header-title .name-title{
 }  
 
 #about .circle-text2{
-    /* background-color: aqua;
-    border: pink solid 1px; */
+    /* background-color: aqua; */
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 800px;
 }
-
     
 #about .circle-text-image{
     border-radius: 90%;
@@ -722,19 +681,19 @@ header #header-title .name-title{
 
 @-webkit-keyframes rotateImage{
     0%{
-                transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }   
 
 @keyframes rotateImage{
     0%{
-                transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }
 
@@ -786,7 +745,6 @@ header #header-title .name-title{
     }    
 }
 
-
 @media screen and (max-width:1090px){ 
 
     .my-story h2{
@@ -821,7 +779,7 @@ header #header-title .name-title{
 }
 
 
-/* --------------------------------------------------------- Desktop - Section CV  ---------------------------------------------------------*/
+/* --------------------------------------------------------- Desktop - SECTION CV  ---------------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -835,7 +793,8 @@ header #header-title .name-title{
 
 } 
 
- /* ------------------------------------  CV Title Text ------------------------------------*/
+/* --------------------------------------------- SECTION CV -  CV Title Text -------------------------------------------------------------*/
+
  #cv .header-line{
     height: 500px;
     /* background-color: brown; */
@@ -850,7 +809,6 @@ header #header-title .name-title{
     /* background-color:green ; */
     height: 450px;
     position: relative;
-
 }
 
 #cv .title-text .creative-h1{
@@ -860,7 +818,6 @@ header #header-title .name-title{
     height: 100px;
     position: absolute;
     top: 0%;
-
 }
 
 #cv .title-text h2{
@@ -872,7 +829,6 @@ header #header-title .name-title{
     position: relative;
     top: -20px;
     left: -90px;
-
 }
 
 #cv .title-text .designer-h1{
@@ -883,14 +839,9 @@ header #header-title .name-title{
     position: absolute;
     top: 130px;
     left: 51%;
-
-
 }
 
-
-
-/* ------------------------------ CV -  Lines ----------------------------*/
-
+/* --------------------------------------------- SECTION CV -  Lines -------------------------------------------------------------*/
 
 #cv .line-x5-middle{
     border-left: 3px solid #FFFFFF;
@@ -910,7 +861,6 @@ header #header-title .name-title{
     margin-left: -3px;
     transform: rotate(-45deg);
     bottom: 20%;
-
 }
 
 #cv .line-x3-middle{
@@ -921,7 +871,6 @@ header #header-title .name-title{
     margin-left: -3px;
     transform: rotate(45deg);
     bottom: -35%;
-
 }
 
 #cv .line-x4-middle{
@@ -932,7 +881,6 @@ header #header-title .name-title{
     margin-left: -3px;
     transform: rotate(-45deg);
     bottom: -35%;
-
 }
 
 #cv .header-line .line-x9{
@@ -955,8 +903,6 @@ header #header-title .name-title{
     top: 50%;
 }
 
-
- 
 #cv  .figure-star{
     display: flex;
     justify-content: center;
@@ -967,15 +913,14 @@ header #header-title .name-title{
     top: 30%;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
-
 }
 
 @keyframes rotateFigure{
     0%{
-                transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }  
 
@@ -989,7 +934,6 @@ header #header-title .name-title{
     top: 45%;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
-
 }
 
 @keyframes rotateFigure{
@@ -1001,28 +945,25 @@ header #header-title .name-title{
     }
 }  
 
-/* ------------------------------ CV - Downloads/Links/Image  ----------------------------*/
+/* --------------------------------------------- SECTION CV -  Downloads/Links/Image -------------------------------------------------------------*/
 
 #cv .cv-downloads{
     width: 100%;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-
 }
 
 #cv .cv-downloads .file{
-border: #FFFFFF 1px solid;
-height: 60px;
-width: 300px;
-
+    border: #FFFFFF 1px solid;
+    height: 60px;
+    width: 300px;
 }
 
 #cv .cv-downloads .file:hover{
     background-color: #8AAED5;
     transform:scale(0.9);
     transition: 1s;
-    
     }
 
 #cv .cv-downloads a{
@@ -1030,10 +971,9 @@ width: 300px;
     font-family: 'Braston';
     font-size: 30px;
     color: #FFFFFF;
-
 }
 
-/*--------------------------------------------------------DESKTOP - ANIMATION------------------------------------------------------------- */
+/* --------------------------------------------------- SECTION  ANIMATION --------------------------------------------------------------------*/
 
 #animation{
     height: 400px;
@@ -1052,6 +992,7 @@ width: 300px;
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
+
 .animation {
     position: absolute;
     display: block;
@@ -1061,6 +1002,7 @@ width: 300px;
     min-width: 100%;
     height: 100%;
 }
+
 .animation span {
     display: inline-block;
     padding-left: 100%;
@@ -1081,32 +1023,24 @@ width: 300px;
 
 @-webkit-keyframes textloop {
     0% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
+        transform: translate(0, 0);
     }
     100% {
-        -webkit-transform: translate(-100%, 0);
-                transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
     }
 }
 
 @keyframes textloop {
     0% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
+        transform: translate(0, 0);
     }
     100% {
-        -webkit-transform: translate(-100%, 0);
-                transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
     }
 }
 
-
-
-/* --------------------------------------------------------- Desktop - Section PROJECTS  ---------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
+/* --------------------------------------------------------- Desktop - SECTION PROJECTS  ---------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #projects{
     display: flex;
@@ -1119,21 +1053,18 @@ width: 300px;
     height: 3000px;
 }
 
-
 .title-text .projects-h1{
     font-size: 100px;
     font-family: 'Braston';
     /* background-color: rosybrown; */
     position: relative;
     left: -110px;
-
 }
 
 .title-text .and-h2{
     font-size: 40px;
     font-family: 'Audhistine';
     color: #8AAED5;
-
 }
 
 .title-text .designs-h1{
@@ -1180,7 +1111,6 @@ width: 300px;
 
   .gallery-image{
     transition: transform 1.5s;
-
   }
 
   .gallery-image h1{
@@ -1201,7 +1131,6 @@ width: 300px;
 
  .gallery-image img:hover{
     filter: none;
-    
  }
 
  .gallery-image:hover{
@@ -1214,14 +1143,13 @@ width: 300px;
     color: #FFFFFF;
  }
 
- /* ---------------------------- Small Stars Figures  ---------------------------------*/
+ /* --------------------------------------------- SECTION PROJECTS -  Small Stars Figures  -------------------------------------------------------------*/
 
 #projects .title-text .line-star1{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
     transform: rotate(45deg);
-
 }
 
 #projects .title-text .line-star2{
@@ -1244,8 +1172,6 @@ width: 300px;
     transform: rotate(-45deg);
 }
 
- 
- 
 #projects .title-text .figure-star{
     display: flex;
     justify-content: center;
@@ -1256,15 +1182,14 @@ width: 300px;
     top: 100px;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
-
 }
 
 @keyframes rotateFigure{
     0%{
-                transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }  
 
@@ -1278,18 +1203,16 @@ width: 300px;
     top: 15%;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
-
 }
 
 @keyframes rotateFigure{
     0%{
-                transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }  
-
 
 .header-line .line-x7{
     border-left: 3px solid #FFFFFF;
@@ -1331,9 +1254,8 @@ width: 300px;
     top: 70%;
 }
 
- /* --------------------------------------------------------- Desktop - Section CONTACT  ---------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------------------------------*/
-
+ /* --------------------------------------------------------- Desktop - SECTION CONTACT  ---------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #contact{
     display: flex;
@@ -1343,7 +1265,6 @@ width: 300px;
     position: relative; 
     /* background-color: #8AAED5; */
     height: 1000px;
-
 }
 
 #contact .header-line{
@@ -1371,7 +1292,6 @@ width: 300px;
     align-items: center;
     position: absolute;
     bottom: 300px;
-
 }
 
 #contact .introduction-text a{
@@ -1381,15 +1301,10 @@ width: 300px;
     color: white;
     font-family: 'braston';
     font-size: 40px;
-
 }
 
-
-
-
-
-/* --------------------------------------------------------- Desktop - Section FOOTER  ---------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------- Desktop - SECTION FOOTER  ---------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 footer{
     display: flex;
@@ -1408,7 +1323,6 @@ footer .social-media{
     align-items: center;
 }
 
-    
 footer .social-media a{
     font-size: 5em; 
     color: white;
@@ -1422,7 +1336,7 @@ footer .social-media a:hover i{
 @media screen and (max-width:1000px){ 
 
     #footer .social-media a{
-        font-size: 8em; 
-        color: white;
+    font-size: 8em; 
+    color: white;
     }
 }
