@@ -558,7 +558,7 @@ display: none;
 #about .my-story{
     /* background-color: rebeccapurple;  */
     width: 90%;
-    height: 1200px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,13 +569,12 @@ display: none;
 }  
 
 #about .circle-text2{
-    /* background-color: aqua;
-    border: pink solid 1px; */
+    /* background-color: aqua; */
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 700px;
 }
 
 
