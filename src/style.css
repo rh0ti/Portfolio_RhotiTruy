@@ -590,13 +590,6 @@ header #header-title .name-title{
         justify-content: center;
         align-items: center;
         padding-bottom: 200px;
-        /* transition: 0.8s;
-        opacity: 0; */
-    }
-
-    #header-title .circle-text[data-scroll="in"]{
-        opacity: 1;
-        transition-delay: 0.8s;
     }
 
     #header-title .circle-text1{
