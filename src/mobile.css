@@ -1,56 +1,17 @@
 /* ---------------------------------------------------- My CSS Reset --------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------*/
-*{
-	margin: 0;
-	padding: 0;
-	}
 
-*, *:after, *:before{
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #000000;
-  
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-
-
-}
 
 
 /* ------------- Button to Top -------------*/
 
-#topBtn{
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    font-size: 22px; 
-    width: 50px;
-    height: 50px;
-    background-color:white;
+/* #topBtn{
     color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-}
+} */
 
 
 
-/* ---------------------------------MOBILE - Grid - Whole Webpage ------------------------------------*/
+/* -------------------------------------------------MOBILE - Grid - Whole Webpage ------------------------------------------------------*/
 
 #content{
     display: grid;
@@ -60,13 +21,9 @@ header{
     margin: 0 auto;
 }
 
-#content >*{
-    background: #000000;         
-} 
 
 
-
-/* ---------------------------------------------------- Desktop - Section NAVIGATION ----------------------------------------------------*/
+/* ---------------------------------------------------- Desktop - SECTION NAVIGATION ----------------------------------------------------*/
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -105,7 +62,7 @@ nav .line2{
     left:10px;
 }
 
-/* ------------------------- 3D ANIMATION ------------------------------*/
+/* -------------------------- 3D ANIMATION ------------------------------*/
 
 
 .animation2{
