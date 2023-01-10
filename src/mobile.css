@@ -26,8 +26,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px white solid; */
-    /* position: relative; */
+    position: relative;
 
 
 }
@@ -69,7 +68,6 @@ header{
 
 /* ---------------------------------------------------- Desktop - Section NAVIGATION ----------------------------------------------------*/
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 
 ul li a{
@@ -244,24 +242,10 @@ display: none;
 
 }
 
-.header-line .line-x7{
-    border-left: 3px solid #FFFFFF;
-    height: 30px;
-    position: absolute;
-    left: 90%;
-    margin-left: -3px;
-    transform: rotate(45deg);
-    top: 50%;
-}
 
-.header-line .line-x8{
-    border-left: 3px solid #FFFFFF;
-    height: 30px;
-    position: absolute;
-    left: 90%;
-    margin-left: -3px;
-    transform: rotate(-45deg);
-    top: 50%;
+.header-line .line-x8,.header-line .line-x7{
+display: none;
+
 }
 
 .header-line .line-x9{
@@ -415,7 +399,7 @@ display: none;
     height: 100px;
     right: 10%;
     margin-left: -3px;
-    top: 168%;
+    top: 175%;
     position: absolute;
     animation: rotateStern 5s linear infinite;
 }
@@ -474,13 +458,13 @@ display: none;
 }
 
 .title-text .web-h1{
-    font-size: 40px;
+    font-size: 38px;
     font-family: 'Braston';
 
 }
 
 .title-text .designer-h2{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Audhistine';
     color: #8AAED5;
     position: relative;
@@ -489,11 +473,11 @@ display: none;
 }
 
 .title-text .developer-h1{
-    font-size: 40px;
+    font-size: 38px;
     font-family: 'Braston';
     position: relative;
-    top: -60px;
-    right: -85px;
+    top: -58px;
+    right: -78px;
 
 }
 
@@ -550,7 +534,8 @@ display: none;
     flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
-    height: 150vh;
+    height: 1100px;
+    /* background-color: blue; */
 }
 
 
@@ -560,59 +545,98 @@ display: none;
 #about .story-text{
     /* background-color: yellow; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 1100px;
     width: 100%;
-    height: 100%;
 }  
 
 /* ----------- Story Text / Small circle / My story DIV ---------*/
 
 #about .my-story{
-    /* background-color: green;  */
-    width: 100%;
+    /* background-color: rebeccapurple;  */
+    width: 90%;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align:left;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
 }  
 
 #about .circle-text2{
     /* background-color: aqua;
     border: pink solid 1px; */
-    width: 100%;
-    /* transition: 0.8s;
-    opacity: 0; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
 }
 
 
+#about .circle-text-image{
+    border-radius: 90%;
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    animation: rotateImage 20s linear infinite;
+}   
+
+.my-story p{
+    /* border: black solid 1px; */
+    font-size: 23px;
+    font-display: block;
+    max-width: 500px;
+}
 /* --------------------------------------------------------- Desktop - Section CV  ---------------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 #cv{
     display: flex;
+    /* align-items: center; */
     flex-direction: column;
-    /* border: solid 1px white;  */
     position: relative; 
-    height: 100%;
-    /* background-color: #8AAED5; */
+    max-height: 1800px;
+    /* background-color: blueviolet; */
 }
 
  /* ------------------------------------  CV Title Text ------------------------------------*/
+ #cv .header-line{
+    height: 250px;
+    /* background-color: brown; */
+    position: relative;
+}
 
+#cv .header-line .vertical-line-small-1{
+    bottom: 70%;
+    height: 80px;
+
+}
 
  #cv .title-text{
-    /* background-color: aqua; */
-    padding-top: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* background-color:green ; */
+    height: 250px;
+    position: relative;
 
 }
 
 #cv .title-text .creative-h1{
     font-size: 50px;
     font-family: 'Braston';
-    padding-right: 0px;
+    /* background-color: rgb(118, 38, 123); */
+    height: 70px;
+    position: absolute;
+
 
 }
 
@@ -620,16 +644,25 @@ display: none;
     font-size: 20px;
     font-family: 'Audhistine';
     color: #8AAED5;
-    padding-right: 50%;
+    /* background-color: rgb(51, 64, 139); */
+    height: 70px;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+
+
 
 }
 
 #cv .title-text .designer-h1{
     font-size: 50px;
     font-family: 'Braston';
-    position: relative;
-    top: -65px;
-    right: -50px;
+    /* background-color: aquamarine; */
+    height: 70px;
+    position: absolute;
+    top: 70px;
+    left: 200px;
+
 
 }
 
@@ -643,9 +676,10 @@ display: none;
     align-items: center;
     width: 100px;
     height: 100px;
-    left: 38%;
-    top: 22%;
+    left: -3%;
+    top: 92%;
     position: absolute;
+    z-index: 999;
     animation: rotateFigure 10s linear infinite;
 
 }
@@ -665,10 +699,11 @@ display: none;
     align-items: center;
     width: 100px;
     height: 100px;
-    right: 37%;
-    top:110%;
+    right: 2%;
+    top:170%;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
+    z-index: 999;
 
 }
 
@@ -703,8 +738,22 @@ display: none;
 /*--------------------------------------------------------DESKTOP - ANIMATION------------------------------------------------------------- */
 
 #animation{
-    height: 25vh;
-    z-index: 9999;
+    height: 350px;
+    /* background-color: orange; */
+    position: relative;
+}
+
+
+.animation-w {
+    /* background-color: khaki; */
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 500px;
+    top: 35%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 /* --------------------------------------------------------- Desktop - Section PROJECTS  ---------------------------------------------------------*/
@@ -715,41 +764,37 @@ display: none;
 #projects{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
-    /* background-color: #8AAED5; */
-    height: 100%;
+    /* background-color: #0b3b1c; */
+    height: 5000px;
 }
-
 
 .title-text .projects-h1{
     font-size: 50px;
     font-family: 'Braston';
+    /* background-color: rosybrown; */
     position: absolute;
-    right: 200px;
-    top: 1.8%;
-
+    left: 13%;
+    top: 50px;
 
 }
 
 .title-text .and-h2{
     font-size: 20px;
     font-family: 'Audhistine';
-    color: #8AAED5;
-    position: absolute;
-    top: 145px;
-    left: 90px;
-
-
+    /* color: #8AAED5; */
 }
 
 .title-text .designs-h1{
     font-size: 50px;
     font-family: 'Braston';
     position: absolute;
-    top: 200px;
-    right: 5px;
+    right: 10%;
+    top: 180px;
+
 
 }
 
@@ -884,8 +929,8 @@ display: none;
     align-items: center;
     width: 100px;
     height: 100px;
-    right: 20%;
-    top: 15%;
+    right: 70%;
+    top: 140px;
     position: absolute;
     animation: rotateFigure 10s linear infinite;
 
@@ -901,46 +946,6 @@ display: none;
 }  
 
 
-.header-line .line-x7{
-    border-left: 3px solid #FFFFFF;
-    height: 40px;
-    position: absolute;
-    left: 90%;
-    margin-left: -3px;
-    transform: rotate(45deg);
-    top: 60%;
-}
-
-.header-line .line-x8{
-    border-left: 3px solid #FFFFFF;
-    height: 40px;
-    position: absolute;
-    left: 90%;
-    margin-left: -3px;
-    transform: rotate(-45deg);
-    top: 60%;
-}
-
-.header-line .line-x9{
-    border-left: 3px solid #FFFFFF;
-    height: 20px;
-    position: absolute;
-    right: 90%;
-    margin-left: -3px;
-    transform: rotate(45deg);
-    top: 70%;
-}
-
-.header-line .line-x10{
-    border-left: 3px solid #FFFFFF;
-    height: 20px;
-    position: absolute;
-    right: 90%;
-    margin-left: -3px;
-    transform: rotate(-45deg);
-    top: 70%;
-}
-
  /* --------------------------------------------------------- Desktop - Section CONTACT  ---------------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -952,15 +957,42 @@ display: none;
     /* border: solid 1px white;  */
     position: relative; 
     /* background-color: #8AAED5; */
-    height:80vh;
+    height: 300px;
+
 }
 
-#contact .introduction-text{
+#contact .header-line .vertical-line-small-1{
+display:none;
+
+}
+
+#contact .header-line{
+    height: 300px;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#contact .introduction-text {
+    height: 200px;
+    width: 100%;
+    /* background-color: red; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#contact .introduction-text p{
+    height: 150px;
+    width: 300px;
     position: absolute;
-    top: 30%;
+    bottom: 0px;
+    /* background-color: green; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
-#contact .header-line .line-x3-middle, #contact .header-line .line-x4-middle{
+#contact .header-line .line-x3-middle, #contact .header-line .line-x4-middle {
     display: none;
 }
 

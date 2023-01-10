@@ -42,7 +42,6 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px white solid; */
     position: relative;
 
 
@@ -59,11 +58,14 @@ header{
     width: 50px;
     height: 50px;
     background:#FFFFFF;
-    color: black;
+    color: #000000;
     border: none;
     cursor: pointer;
     border-radius: 50%;
 }
+
+/* --------------------------------------------------------------- Desktop --------------------------------------------------------------------------------------*/
+
 
 
 /* ---------------------------------------------------- Desktop - Section NAVIGATION ----------------------------------------------------*/
@@ -667,7 +669,7 @@ header #header-title .name-title{
     flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
-    height: 80vh;
+    height: 800px;
 }
 
 
@@ -687,22 +689,14 @@ header #header-title .name-title{
     /* background-color: white;  */
     width: 50%;
     height: 800px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
     text-align: left;
+    z-index: 999;
 }  
 
 #about .circle-text2{
@@ -710,23 +704,11 @@ header #header-title .name-title{
     border: pink solid 1px; */
     width: 50%;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     height: 800px;
-    /* transition: 0.8s;
-    opacity: 0; */
 }
 
-#about .circle-text2[data-scroll="in"]{
-    opacity: 1;
-    -webkit-transition-delay: 1.2s;
-         -o-transition-delay: 1.2s;
-            transition-delay: 1.2s;
-}
     
 #about .circle-text-image{
     border-radius: 90%;
@@ -735,28 +717,23 @@ header #header-title .name-title{
     background-position: center;
     background-size: cover;
     position: absolute;
-    -webkit-animation: rotateImage 20s linear infinite;
-            animation: rotateImage 20s linear infinite;
+    animation: rotateImage 20s linear infinite;
 }   
 
 @-webkit-keyframes rotateImage{
     0%{
-        -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
     }
     100%{
-        -webkit-transform:rotate(0deg);
                 transform:rotate(0deg);
     }
 }   
 
 @keyframes rotateImage{
     0%{
-        -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
     }
     100%{
-        -webkit-transform:rotate(0deg);
                 transform:rotate(0deg);
     }
 }
@@ -841,13 +818,6 @@ header #header-title .name-title{
     font-size: 25px;
     font-display: block;
     max-width: 500px;
-    /* transition: 0.8s;
-    opacity: 0; */
-}
-
-.my-story p[data-scroll="in"]{
-    opacity: 1;
-    transition-delay: 0.9s;
 }
 
 
@@ -857,25 +827,39 @@ header #header-title .name-title{
 
 #cv{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
-    /* border: solid 1px white;  */
     position: relative; 
-    height: 100%;
-}
+    max-height: 1400px;
+    /* background-color: blueviolet; */
+
+} 
 
  /* ------------------------------------  CV Title Text ------------------------------------*/
-
+ #cv .header-line{
+    height: 500px;
+    /* background-color: brown; */
+    position: relative;
+}
 
  #cv .title-text{
-    padding-bottom: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* background-color:green ; */
+    height: 450px;
+    position: relative;
 
 }
 
 #cv .title-text .creative-h1{
     font-size: 100px;
     font-family: 'Braston';
-    padding-right: 0px;
+    /* background-color: rgb(118, 38, 123); */
+    height: 100px;
+    position: absolute;
+    top: 0%;
 
 }
 
@@ -883,20 +867,30 @@ header #header-title .name-title{
     font-size: 40px;
     font-family: 'Audhistine';
     color: #8AAED5;
-    padding-right: 60%;
+    /* background-color: rgb(51, 64, 139); */
+    height: 100px;
+    position: relative;
+    top: -20px;
+    left: -90px;
 
 }
 
 #cv .title-text .designer-h1{
     font-size: 100px;
     font-family: 'Braston';
-    position: relative;
-    top: -138px;
-    right: -70px;
+    /* background-color: aquamarine; */
+    height: 100px;
+    position: absolute;
+    top: 130px;
+    left: 51%;
+
 
 }
 
-/* ------------------------------ CV -  Big X Figures 3  ----------------------------*/
+
+
+/* ------------------------------ CV -  Lines ----------------------------*/
+
 
 #cv .line-x5-middle{
     border-left: 3px solid #FFFFFF;
@@ -904,6 +898,7 @@ header #header-title .name-title{
     position: absolute;
     left: 50%;
     margin-left: -3px;
+    bottom: 20%;
     transform: rotate(45deg);
 }
 
@@ -914,6 +909,7 @@ header #header-title .name-title{
     left: 50%;
     margin-left: -3px;
     transform: rotate(-45deg);
+    bottom: 20%;
 
 }
 
@@ -1012,12 +1008,27 @@ header #header-title .name-title{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+
 }
+
+#cv .cv-downloads .file{
+border: #FFFFFF 1px solid;
+height: 60px;
+width: 300px;
+
+}
+
+#cv .cv-downloads .file:hover{
+    background-color: #8AAED5;
+    transform:scale(0.9);
+    transition: 1s;
+    
+    }
 
 #cv .cv-downloads a{
     text-decoration-line: none;
     font-family: 'Braston';
-    font-size: 50px;
+    font-size: 30px;
     color: #FFFFFF;
 
 }
@@ -1025,12 +1036,14 @@ header #header-title .name-title{
 /*--------------------------------------------------------DESKTOP - ANIMATION------------------------------------------------------------- */
 
 #animation{
-    height: 50vh;
+    height: 400px;
+    /* background-color: orange; */
+    position: relative;
 }
 
 .animation-w {
     /* background-color: khaki; */
-    position: relative;
+    position: absolute;
     display: block;
     width: 100vw;
     height: 300px;
@@ -1098,20 +1111,21 @@ header #header-title .name-title{
 #projects{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
-    /* background-color: #8AAED5; */
-    height: 100%;
+    /* background-color: #0b3b1c; */
+    height: 3000px;
 }
 
 
 .title-text .projects-h1{
     font-size: 100px;
     font-family: 'Braston';
+    /* background-color: rosybrown; */
     position: relative;
-    right: 160px;
-
+    left: -110px;
 
 }
 
@@ -1119,8 +1133,6 @@ header #header-title .name-title{
     font-size: 40px;
     font-family: 'Audhistine';
     color: #8AAED5;
-    position: relative;
-    right: 100px;
 
 }
 
@@ -1128,9 +1140,7 @@ header #header-title .name-title{
     font-size: 100px;
     font-family: 'Braston';
     position: relative;
-    top: -138px;
-    right: -160px;
-
+    right: -110px;
 }
 
 .row {
@@ -1153,7 +1163,7 @@ header #header-title .name-title{
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     .column {
       flex: 50%;
       max-width: 50%;
@@ -1332,13 +1342,41 @@ header #header-title .name-title{
     /* border: solid 1px white;  */
     position: relative; 
     /* background-color: #8AAED5; */
-    height: 80vh;
+    height: 1000px;
+
 }
 
-#contact .introduction-text{
-    position: absolute;
-    top: 50%;
+#contact .header-line{
+    height: 500px;
+    width: 100%;
+    /* background-color: blue; */
 }
+
+#contact .introduction-text {
+    height: 800px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact .introduction-text p{
+    height: 350px;
+    width: 300px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 300px;
+
+}
+
+
+
+
 
 
 
@@ -1350,7 +1388,8 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 30vh;
+    height: 200px;
+    /* background-color: red; */
 }
 
 footer .social-media{
