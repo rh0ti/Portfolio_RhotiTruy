@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face{
     font-family: 'Audhistine';
     src: url(/fonts/Audhistine.otf) format('opentype');
@@ -22,7 +29,8 @@
 	}
 
 *, *:after, *:before{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html{
@@ -37,10 +45,19 @@ body{
 }
 
 header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
 }
 
@@ -65,15 +82,28 @@ header{
 
 header nav{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 header nav .sidebar ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
 }
 
 ul li{
@@ -93,8 +123,12 @@ ul li .li-down, .li-down2{
 }
 
 #nav-line{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #moon {
@@ -104,7 +138,8 @@ ul li .li-down, .li-down2{
     position: relative;
     top: -170px;
     left: -2%;
-    box-shadow: 15px 15px 0 0 white;
+    -webkit-box-shadow: 15px 15px 0 0 white;
+            box-shadow: 15px 15px 0 0 white;
   }
 
 /* ---------------------------------------------------- Navigation Line ----------------------------------------------------------------*/
@@ -155,10 +190,19 @@ nav .line2{
 /* -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 header #header-title{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 100px;
     z-index: 10;
 }
@@ -199,9 +243,15 @@ header #header-title .name-title{
 }
 
 .introduction-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* border: 1px white solid; */
     padding-top: 50px
 }
@@ -216,9 +266,16 @@ header #header-title .name-title{
 /* ---------------------------------------------------- SECTION HEADER - LINE FIGURES ----------------------------------------------------------------*/
 
 .header-line{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* border: 1px white solid; */
     height: 400px;
 }
@@ -254,7 +311,9 @@ header #header-title .name-title{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .header-line .line-x2-middle{
@@ -263,7 +322,9 @@ header #header-title .name-title{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 /* ------------------------------------------- SECTION HEADER -  Big X Figures 2 --------------------------------------------------------------------*/
@@ -275,7 +336,9 @@ header #header-title .name-title{
     left: 50%;
     bottom: 0%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .header-line .line-x4-middle{
@@ -285,7 +348,9 @@ header #header-title .name-title{
     left: 50%;
     bottom: 0%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 
 }
 
@@ -297,7 +362,9 @@ header #header-title .name-title{
     position: absolute;
     left: 90%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 25%;
 }
 
@@ -307,7 +374,9 @@ header #header-title .name-title{
     position: absolute;
     left: 90%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 25%;
 }
 
@@ -317,7 +386,9 @@ header #header-title .name-title{
     position: absolute;
     left: 20%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 6%;
 }
 
@@ -327,7 +398,9 @@ header #header-title .name-title{
     position: absolute;
     left: 20%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 6%;
 
 }
@@ -338,7 +411,9 @@ header #header-title .name-title{
     position: absolute;
     left: 90%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 60%;
 }
 
@@ -348,7 +423,9 @@ header #header-title .name-title{
     position: absolute;
     left: 90%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 60%;
 }
 
@@ -358,7 +435,9 @@ header #header-title .name-title{
     position: absolute;
     right: 90%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 70%;
 }
 
@@ -368,7 +447,9 @@ header #header-title .name-title{
     position: absolute;
     right: 90%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 70%;
 }
 
@@ -379,159 +460,265 @@ header #header-title .name-title{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .header-line .line-star2{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 
 }.header-line .line-star3{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
 }
 
 .header-line .line-star4{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .figure-star{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     left: 5%;
     margin-left: -3px;
     top: 20%;
     position: absolute;
-    animation: rotateFigure 10s linear infinite;
+    -webkit-animation: rotateFigure 10s linear infinite;
+            animation: rotateFigure 10s linear infinite;
+}
+
+@-webkit-keyframes rotateFigure{
+    0%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
 }
 
 @keyframes rotateFigure{
     0%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
 }  
 
 .figure-star2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     right: 5%;
     margin-left: -3px;
     top: 6%;
     position: absolute;
-    animation: rotateText1 5s linear infinite;
+    -webkit-animation: rotateText1 5s linear infinite;
+            animation: rotateText1 5s linear infinite;
 
+}
+
+@-webkit-keyframes rotateText1{
+    0%{
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+    100%{
+        -webkit-transform:rotate(-0deg);
+                transform:rotate(-0deg);
+    }
 }
 
 @keyframes rotateText1{
     0%{
-        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
     }
     100%{
-        transform:rotate(-0deg);
+        -webkit-transform:rotate(-0deg);
+                transform:rotate(-0deg);
     }
 }  
 
 .figure-star3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     left: 10%;
     margin-left: -3px;
     top: 45%;
     position: absolute;
-    animation: rotateStar 10s linear infinite;
+    -webkit-animation: rotateStar 10s linear infinite;
+            animation: rotateStar 10s linear infinite;
+}
+
+@-webkit-keyframes rotateStar{
+    0%{
+                -webkit-transform: rotate(-360deg);
+                        transform: rotate(-360deg);
+    }
+    100%{
+                -webkit-transform:rotate(0deg);
+                        transform:rotate(0deg);
+    }
 }
 
 @keyframes rotateStar{
     0%{
-                transform: rotate(-360deg);
+                -webkit-transform: rotate(-360deg);
+                        transform: rotate(-360deg);
     }
     100%{
-                transform:rotate(0deg);
+                -webkit-transform:rotate(0deg);
+                        transform:rotate(0deg);
     }
 }  
 
 .figure-star4{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     right: 10%;
     margin-left: -3px;
     top: 90%;
     position: absolute;
-    animation: rotateText1 5s linear infinite;
+    -webkit-animation: rotateText1 5s linear infinite;
+            animation: rotateText1 5s linear infinite;
 }
 
 @keyframes rotateText1{
     0%{
-        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
     }
     100%{
-        transform:rotate(-0deg);
+        -webkit-transform:rotate(-0deg);
+                transform:rotate(-0deg);
     }
 }  
 
 .figure-star5{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     right: 20%;
     margin-left: -3px;
     top: 43%;
     position: absolute;
-    animation: rotateStern 5s linear infinite;
+    -webkit-animation: rotateStern 5s linear infinite;
+            animation: rotateStern 5s linear infinite;
+}
+
+@-webkit-keyframes rotateStern{
+    0%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    100%{
+        -webkit-transform:rotate(-0deg);
+                transform:rotate(-0deg);
+    }
 }
 
 @keyframes rotateStern{
     0%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform:rotate(-0deg);
+        -webkit-transform:rotate(-0deg);
+                transform:rotate(-0deg);
     }
 }  
 
 .figure-star6{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     left: 10%;
     margin-left: -3px;
     top: 90%;
     position: absolute;
-    animation: rotateStern 5s linear infinite;
+    -webkit-animation: rotateStern 5s linear infinite;
+            animation: rotateStern 5s linear infinite;
 }
 
 @keyframes rotateStern{
     0%{
-                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(-0deg);
+                -webkit-transform:rotate(-0deg);
+                        transform:rotate(-0deg);
     }
 }  
 
@@ -586,9 +773,15 @@ header #header-title .name-title{
         /* background-color: yellow; */
         min-height: 600px;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding-bottom: 200px;
     }
 
@@ -596,15 +789,29 @@ header #header-title .name-title{
     height: 1000px;
     width: 1000px;
     position: relative;
-    animation: rotateText 20s linear infinite;
+    -webkit-animation: rotateText 20s linear infinite;
+            animation: rotateText 20s linear infinite;
+    }  
+
+    @-webkit-keyframes rotateText{
+        0%{
+                    -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+        }
+        100%{
+                    -webkit-transform:rotate(0deg);
+                            transform:rotate(0deg);
+        }
     }  
 
     @keyframes rotateText{
         0%{
-                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
         }
         100%{
-                    transform:rotate(0deg);
+                    -webkit-transform:rotate(0deg);
+                            transform:rotate(0deg);
         }
     }
 
@@ -620,9 +827,16 @@ header #header-title .name-title{
 
 
  #about{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
     height: 800px;
@@ -632,6 +846,8 @@ header #header-title .name-title{
 
 #about .story-text{
     /* background-color: yellow; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 200px;
     width: 100%;
@@ -643,10 +859,19 @@ header #header-title .name-title{
     /* background-color: white;  */
     width: 50%;
     height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
     text-align: left;
@@ -656,9 +881,15 @@ header #header-title .name-title{
 #about .circle-text2{
     /* background-color: aqua; */
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 800px;
 }
     
@@ -669,24 +900,29 @@ header #header-title .name-title{
     background-position: center;
     background-size: cover;
     position: absolute;
-    animation: rotateImage 20s linear infinite;
+    -webkit-animation: rotateImage 20s linear infinite;
+            animation: rotateImage 20s linear infinite;
 }   
 
 @-webkit-keyframes rotateImage{
     0%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
 }   
 
 @keyframes rotateImage{
     0%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
 }
 
@@ -777,9 +1013,14 @@ header #header-title .name-title{
 
 
 #cv{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* align-items: center; */
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative; 
     max-height: 1400px;
     /* background-color: blueviolet; */
@@ -795,10 +1036,19 @@ header #header-title .name-title{
 }
 
  #cv .title-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* background-color:green ; */
     height: 450px;
     position: relative;
@@ -843,7 +1093,9 @@ header #header-title .name-title{
     left: 50%;
     margin-left: -3px;
     bottom: 20%;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 #cv .line-x6-middle{
@@ -852,7 +1104,9 @@ header #header-title .name-title{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     bottom: 20%;
 }
 
@@ -862,7 +1116,9 @@ header #header-title .name-title{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     bottom: -35%;
 }
 
@@ -872,7 +1128,9 @@ header #header-title .name-title{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     bottom: -35%;
 }
 
@@ -882,7 +1140,9 @@ header #header-title .name-title{
     position: absolute;
     right: 90%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 50%;
 }
 
@@ -892,49 +1152,69 @@ header #header-title .name-title{
     position: absolute;
     right: 90%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 50%;
 }
 
 #cv  .figure-star{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     left: 20%;
     top: 30%;
     position: absolute;
-    animation: rotateFigure 10s linear infinite;
+    -webkit-animation: rotateFigure 10s linear infinite;
+            animation: rotateFigure 10s linear infinite;
 }
 
 @keyframes rotateFigure{
     0%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
 }  
 
 #cv .figure-star2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     right: 20%;
     top: 45%;
     position: absolute;
-    animation: rotateFigure 10s linear infinite;
+    -webkit-animation: rotateFigure 10s linear infinite;
+            animation: rotateFigure 10s linear infinite;
 }
 
 @keyframes rotateFigure{
     0%{
-                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
     }
     100%{
-                transform:rotate(0deg);
+                -webkit-transform:rotate(0deg);
+                        transform:rotate(0deg);
     }
 }  
 
@@ -942,9 +1222,15 @@ header #header-title .name-title{
 
 #cv .cv-downloads{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-evenly;
-    align-items: center;
+    -webkit-box-pack:space-evenly;
+        -ms-flex-pack:space-evenly;
+            justify-content:space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #cv .cv-downloads .file{
@@ -955,12 +1241,17 @@ header #header-title .name-title{
 
 #cv .cv-downloads .file:hover{
     background-color: #8AAED5;
-    transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+        -ms-transform:scale(0.9);
+            transform:scale(0.9);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     }
 
 #cv .cv-downloads a{
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
     font-family: 'Braston';
     font-size: 30px;
     color: #FFFFFF;
@@ -982,7 +1273,9 @@ header #header-title .name-title{
     height: 300px;
     top: 50%;
     left: 42%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     overflow: hidden;
 }
 
@@ -1007,28 +1300,34 @@ header #header-title .name-title{
     right: 100px;
     line-height: 300px;
     font-size: 300px;
-    animation: textloop 20s linear infinite;
+    -webkit-animation: textloop 20s linear infinite;
+            animation: textloop 20s linear infinite;
 }
 
 .animation2 span {
-    animation-delay: -10s;
+    -webkit-animation-delay: -10s;
+            animation-delay: -10s;
 }
 
 @-webkit-keyframes textloop {
     0% {
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
     }
     100% {
-        transform: translate(-100%, 0);
+        -webkit-transform: translate(-100%, 0);
+                transform: translate(-100%, 0);
     }
 }
 
 @keyframes textloop {
     0% {
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
     }
     100% {
-        transform: translate(-100%, 0);
+        -webkit-transform: translate(-100%, 0);
+                transform: translate(-100%, 0);
     }
 }
 
@@ -1036,10 +1335,19 @@ header #header-title .name-title{
 /* -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #projects{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
     /* background-color: #0b3b1c; */
@@ -1068,14 +1376,19 @@ header #header-title .name-title{
 }
 
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0 4px;
   }
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 33%;
+    -webkit-box-flex: 33%;
+        -ms-flex: 33%;
+            flex: 33%;
     max-width: 33%;
     padding: 40px 40px;
   }
@@ -1089,7 +1402,9 @@ header #header-title .name-title{
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 600px) {
     .column {
-      flex: 50%;
+      -webkit-box-flex: 50%;
+          -ms-flex: 50%;
+              flex: 50%;
       max-width: 50%;
     }
   }
@@ -1097,13 +1412,19 @@ header #header-title .name-title{
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
-      flex: 100%;
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%;
       max-width: 100%;
     }
   }
 
   .gallery-image{
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    -o-transition: transform 1.5s;
     transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
   }
 
   .gallery-image h1{
@@ -1119,16 +1440,20 @@ header #header-title .name-title{
   }
 
  .gallery-image img{
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
  }
 
  .gallery-image img:hover{
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
  }
 
  .gallery-image:hover{
     /* width: 95%; */
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
  }
 
  .gallery-image a{
@@ -1142,68 +1467,94 @@ header #header-title .name-title{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 #projects .title-text .line-star2{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 
 }#projects .title-text .line-star3{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
 }
 
 #projects .title-text .line-star4{
     border-left: 2px solid #FFFFFF;
     height: 30px;
     position: absolute;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 #projects .title-text .figure-star{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     left: 20%;
     top: 100px;
     position: absolute;
-    animation: rotateFigure 10s linear infinite;
+    -webkit-animation: rotateFigure 10s linear infinite;
+            animation: rotateFigure 10s linear infinite;
 }
 
 @keyframes rotateFigure{
     0%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
 }  
 
 #projects .title-text .figure-star2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100px;
     height: 100px;
     right: 20%;
     top: 15%;
     position: absolute;
-    animation: rotateFigure 10s linear infinite;
+    -webkit-animation: rotateFigure 10s linear infinite;
+            animation: rotateFigure 10s linear infinite;
 }
 
 @keyframes rotateFigure{
     0%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
 }  
 
@@ -1213,7 +1564,9 @@ header #header-title .name-title{
     position: absolute;
     left: 90%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 60%;
 }
 
@@ -1223,7 +1576,9 @@ header #header-title .name-title{
     position: absolute;
     left: 90%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 60%;
 }
 
@@ -1233,7 +1588,9 @@ header #header-title .name-title{
     position: absolute;
     right: 90%;
     margin-left: -3px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 70%;
 }
 
@@ -1243,7 +1600,9 @@ header #header-title .name-title{
     position: absolute;
     right: 90%;
     margin-left: -3px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 70%;
 }
 
@@ -1251,9 +1610,16 @@ header #header-title .name-title{
 /* ----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #contact{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* border: solid 1px white;  */
     position: relative; 
     /* background-color: #8AAED5; */
@@ -1270,19 +1636,34 @@ header #header-title .name-title{
     height: 800px;
     width: 100%;
     /* background-color: red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #contact .introduction-text p{
     height: 350px;
     width: 300px;
     /* background-color: green; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     bottom: 300px;
 }
@@ -1300,10 +1681,19 @@ header #header-title .name-title{
 /* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 200px;
     /* background-color: red; */
 }
@@ -1311,9 +1701,15 @@ footer{
 footer .social-media{
     height: 300px;
     /* border: solid 1px black; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 footer .social-media a{
@@ -1322,7 +1718,11 @@ footer .social-media a{
 }
 
 footer .social-media a:hover i{
-    transform:scale(0.8);
+    -webkit-transform:scale(0.8);
+        -ms-transform:scale(0.8);
+            transform:scale(0.8);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
