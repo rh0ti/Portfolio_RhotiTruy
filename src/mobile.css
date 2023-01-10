@@ -729,6 +729,7 @@ display: none;
     justify-content:space-around;
     align-items: center;
     flex-direction: column;
+    /* background-color: green; */
 }
 
 #cv .cv-downloads a{
@@ -736,13 +737,13 @@ display: none;
     font-family: 'Braston';
     font-size: 30px;
     color: #FFFFFF;
-
+background-color: black;
 }
 
 /*--------------------------------------------------------DESKTOP - ANIMATION------------------------------------------------------------- */
 
 #animation{
-    height: 350px;
+    height: 500px;
     /* background-color: orange; */
     position: relative;
 }
@@ -753,7 +754,7 @@ display: none;
     position: absolute;
     display: block;
     width: 100vw;
-    height: 500px;
+    height: 400px;
     top: 35%;
     left: 42%;
     transform: translate(-50%, -50%);
