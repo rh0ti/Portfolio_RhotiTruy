@@ -1623,7 +1623,7 @@ header #header-title .name-title{
     /* border: solid 1px white;  */
     position: relative; 
     /* background-color: #8AAED5; */
-    height: 1000px;
+    height: 1100px;
 }
 
 #contact .header-line{
@@ -1633,7 +1633,7 @@ header #header-title .name-title{
 }
 
 #contact .introduction-text {
-    height: 800px;
+    height: 500px;
     width: 100%;
     /* background-color: red; */
     display: -webkit-box;
@@ -1665,16 +1665,17 @@ header #header-title .name-title{
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
-    bottom: 300px;
+    right: -150px;
+    top: -330px;
 }
 
 #contact .introduction-text a{
     text-decoration: none;
     position: absolute;
-    bottom: 190px;
     color: white;
     font-family: 'braston';
     font-size: 40px;
+    bottom: 320px;
 }
 
 /* --------------------------------------------------------- Desktop - SECTION FOOTER  ---------------------------------------------------------*/
