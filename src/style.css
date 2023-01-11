@@ -1665,8 +1665,7 @@ header #header-title .name-title{
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
-    right: -150px;
-    top: -330px;
+    top: 450px; 
 }
 
 #contact .introduction-text a{
@@ -1675,7 +1674,6 @@ header #header-title .name-title{
     color: white;
     font-family: 'braston';
     font-size: 40px;
-    bottom: 320px;
 }
 
 /* --------------------------------------------------------- Desktop - SECTION FOOTER  ---------------------------------------------------------*/
