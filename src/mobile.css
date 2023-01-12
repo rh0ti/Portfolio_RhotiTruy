@@ -441,6 +441,7 @@ display: none;
 /* --------------------------------------------------- SECTION  ANIMATION --------------------------------------------------------------------*/
 
 #animation{
+    display: none;
     height: 500px;
     /* background-color: orange; */
     position: relative;
@@ -451,8 +452,8 @@ display: none;
 }
 
 .animation-w {
-
     /* background-color: khaki; */
+    display: none;
     height: 400px;
     top: 35%;
 }
