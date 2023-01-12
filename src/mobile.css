@@ -65,9 +65,8 @@ nav .line2{
 
 .animation2{
     width:100%;
-    top: 37%;
+    top: 45%;
     /* background-color: aqua; */
-    padding-bottom: 100px;
 }
 
 .animation3{
@@ -139,6 +138,11 @@ display: none;
 
 /* ------------------------------------------- SECTION HEADER -  Small Stars Figures --------------------------------------------------------------------*/
 
+.figure-star{
+    top: 30%;
+}
+
+
 
 .figure-star2{
     right: 15%;
@@ -146,13 +150,13 @@ display: none;
 
 
 .figure-star3{
-    left: 0%;
+    left: 78%;
     top: 50%;
 }
 
 .figure-star4{
     right: 15%; 
-    top: 93%;
+    top: 98%;
 }
 
 
@@ -163,7 +167,7 @@ display: none;
  
 
 .figure-star6{
-    top: 143%;
+    display: none;
 }
 
 
@@ -209,7 +213,7 @@ display: none;
 
 #header-title .circle-text{
     /* background-color: yellow; */
-    min-height: 600px;
+    min-height: 0px;
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -224,8 +228,8 @@ display: none;
 }
 
     #header-title .circle-text1{
-    height: 350px;
-    width: 350px;
+    height: 230px;
+    width: 230px;
     position: relative;
     -webkit-animation: rotateText 20s linear infinite;
             animation: rotateText 20s linear infinite;
@@ -254,8 +258,8 @@ display: none;
     }
 
     #header-title .distortion{
-        min-width: 270px;
-        height: 270px;
+        min-width: 180px;
+        height: 180px;
         position: absolute;
     }
 
@@ -266,7 +270,7 @@ display: none;
 
  #about{
     /* border: solid 1px white;  */
-    height: 1400px;
+    height: 1200px;
     /* background-color: blue; */
 }
 
@@ -291,7 +295,7 @@ display: none;
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 1300px;
+    height: 1100px;
     width: 100%;
 }  
 
@@ -300,20 +304,24 @@ display: none;
 #about .my-story{
     /* background-color: rebeccapurple;  */
     width: 90%;
-    height: 1000px;
+    height: 800px;
     text-align: left;
 }  
 
 #about .circle-text2{
     /* background-color: aqua; */
-    height: 700px;
+    height:200px;
 }
 
 
 #about .circle-text-image{
-    width: 350px;
-    height: 350px;
+    width: 230px;
+    height: 230px;
 }   
+#about .circle-image-big{
+    width: 170px;
+    height: 170px;
+}    
 
 .my-story p{
     /* border: black solid 1px; */
@@ -441,8 +449,6 @@ display: none;
 /* --------------------------------------------------------- Desktop - SECTION PROJECTS  ---------------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
 #projects{
     height: 5260px;
 }
@@ -466,7 +472,7 @@ display: none;
     font-family: 'Braston';
     position: absolute;
     right: 10%;
-    top: 200px;
+    top: 170px;
 }
 
  /* --------------------------------------------- SECTION PROJECTS -  Small Stars Figures  -------------------------------------------------------------*/

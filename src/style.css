@@ -786,6 +786,7 @@ header #header-title .name-title{
     }
 
     #header-title .circle-text1{
+        /* background-color: aqua; */
     height: 1000px;
     width: 1000px;
     position: relative;
@@ -965,12 +966,12 @@ header #header-title .name-title{
 @media screen and (max-width:915px){  
 
     #about .circle-text-image{
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }   
     #about .circle-image-big{
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
     }    
 }
 
