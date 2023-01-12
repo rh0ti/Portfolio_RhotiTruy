@@ -44,6 +44,17 @@ body{
     background-color: #000000; 
 }
 
+#content{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+    grid-template-columns: 100vw;
+    grid-gap: 10px;
+    max-width: 100vw;
+    margin: 0 auto;
+    /* background-color: palevioletred; */
+}
+
 header{
     display: -webkit-box;
     display: -ms-flexbox;

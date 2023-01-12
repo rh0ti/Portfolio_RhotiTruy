@@ -7,7 +7,12 @@
 
 /* ---------------------------------------------------- RESPONSIVE MOBILE ----------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------*/
-
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #FFFFFF;
+    /* background-color: green;  */
+}
 
 
 /* -------------------------------------------------MOBILE - Grid - Whole Webpage ------------------------------------------------------*/
@@ -15,11 +20,12 @@
 #content{
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 375px;
-    grid-template-columns: 375px;
+    -ms-grid-columns: 100vw;
+    grid-template-columns: 100vw;
     grid-gap: 10px;
-    max-width: 375px;
+    max-width: 100vw;
     margin: 0 auto;
+    /* background-color: blue; */
 }
 
 /* ---------------------------------------------------- Mobile - SECTION NAVIGATION ----------------------------------------------------*/
@@ -438,21 +444,25 @@ display: none;
     height: 500px;
     /* background-color: orange; */
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
 .animation-w {
+
     /* background-color: khaki; */
     height: 400px;
     top: 35%;
-    left: 42%;
 }
 
 /* --------------------------------------------------------- Desktop - SECTION PROJECTS  ---------------------------------------------------------*/
 /* -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #projects{
-    height: 5260px;
+    height: 100%;
+    /* background-color: red; */
 }
 
 .title-text .projects-h1{
@@ -460,8 +470,8 @@ display: none;
     font-family: 'Braston';
     /* background-color: rosybrown; */
     position: absolute;
-    left: 13%;
-    top: 60px;
+    left: 20%;
+    top:90px;
 }
 
 .title-text .and-h2{
@@ -473,8 +483,8 @@ display: none;
     font-size: 50px;
     font-family: 'Braston';
     position: absolute;
-    right: 10%;
-    top: 170px;
+    right: 20%;
+    top: 200px;
 }
 
  /* --------------------------------------------- SECTION PROJECTS -  Small Stars Figures  -------------------------------------------------------------*/
