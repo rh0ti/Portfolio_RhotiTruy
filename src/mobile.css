@@ -74,7 +74,7 @@ nav .line2{
 
 .animation2{
     width:90%;
-    top: 45%;
+    top: 43%;
     /* background-color: aqua; */
 }
 
@@ -134,12 +134,26 @@ display: none;
 
 /* ------------------------------------------- SECTION HEADER -  Big X Figures 2 --------------------------------------------------------------------*/
 
+.header-line .line-x1-middle{
+    bottom: 60%;
+
+}
+
+.header-line .line-x2-middle{
+    bottom: 60%;
+
+}
+
+
+
 .header-line .line-x3-middle{
     bottom: 32%;
+    left: 320px;
 }
 
 .header-line .line-x4-middle{
     bottom: 32%;
+    left: 320px;
 }
 
 /* ------------------------------------------- SECTION HEADER -  Small X Figures --------------------------------------------------------------------*/
@@ -412,8 +426,8 @@ padding-top: 100px;
 }
  
 #cv  .figure-star{
-    left: -3%;
-    top: 59%;
+    left: 38%;
+    top: 48%;
     z-index: 999;
 }
 
@@ -421,6 +435,10 @@ padding-top: 100px;
     right: 8%;
     top:170%;
     z-index: 999;
+}
+
+#cv .line-x1-middle, #cv .line-x2-middle{
+    display: none;
 }
 
 /* --------------------------------------------- SECTION CV -  Downloads/Links/Image -------------------------------------------------------------*/
@@ -571,6 +589,10 @@ display:none;
 
 #contact .header-line .line-x3-middle, #contact .header-line .line-x4-middle {
     display: none;
+}
+
+#contact .header-line .line-x1-middle, #contact .header-line .line-x2-middle {
+    top: 70px;
 }
 
 #contact iframe{
