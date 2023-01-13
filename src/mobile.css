@@ -215,7 +215,7 @@ display: none;
     font-family: 'Braston';
     position: relative;
     top: -58px;
-    right: -78px;
+    left: 80px;
 }
 
 /* -------------------------------------------------- SECTION HEADER -  Big Circle Text DIV / IMG  -------------------------------------------------------------*/
@@ -317,6 +317,12 @@ display: none;
     text-align: left;
 }  
 
+#about .story-text .my-story p{
+    font-size: 24px;
+    font-weight: lighter;
+
+}
+
 #about .circle-text2{
     /* background-color: aqua; */
     height:200px;
@@ -375,8 +381,8 @@ display: none;
     /* background-color: rgb(51, 64, 139); */
     height: 70px;
     position: absolute;
-    top: 70px;
-    left: 100px;
+    top: 65px;
+    left: 160px;
 }
 
 #cv .title-text .designer-h1{
@@ -386,7 +392,7 @@ display: none;
     height: 70px;
     position: absolute;
     top: 70px;
-    left: 200px;
+    left: 280px;
 
 
 }
@@ -439,6 +445,12 @@ display: none;
     background-color: black;
 }
 
+#cv .cv-downloads .file{
+    border: #FFFFFF 1px solid;
+    height: 60px;
+    width: 300px;
+}
+
 /* --------------------------------------------------- SECTION  ANIMATION --------------------------------------------------------------------*/
 
 #animation{
@@ -488,6 +500,13 @@ display: none;
     right: 20%;
     top: 200px;
 }
+
+.gallery-image h1{
+    text-align: left;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: lighter;
+  }
 
  /* --------------------------------------------- SECTION PROJECTS -  Small Stars Figures  -------------------------------------------------------------*/
 
