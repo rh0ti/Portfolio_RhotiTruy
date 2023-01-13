@@ -73,9 +73,16 @@ nav .line2{
 /* ------------------------------------------------------ 3D ANIMATION ------------------------------------------------------------------*/
 
 .animation2{
-    width:100%;
+    width:90%;
     top: 45%;
     /* background-color: aqua; */
+}
+
+.animation2 iframe{
+    position: relative;
+    left: 10px;
+
+
 }
 
 .animation3{
@@ -159,8 +166,7 @@ display: none;
 
 
 .figure-star3{
-    left: 78%;
-    top: 50%;
+display: none;
 }
 
 .figure-star4{
@@ -171,7 +177,7 @@ display: none;
 
 .figure-star5{
     right: 10%;
-    top: 175%;
+    top: 169%;
 }
  
 
@@ -326,6 +332,7 @@ display: none;
 #about .circle-text2{
     /* background-color: aqua; */
     height:200px;
+padding-top: 100px;
 }
 
 
@@ -382,7 +389,7 @@ display: none;
     height: 70px;
     position: absolute;
     top: 65px;
-    left: 160px;
+    left: 100px;
 }
 
 #cv .title-text .designer-h1{
@@ -392,7 +399,7 @@ display: none;
     height: 70px;
     position: absolute;
     top: 70px;
-    left: 280px;
+    left: 200px;
 
 
 }
@@ -411,7 +418,7 @@ display: none;
 }
 
 #cv .figure-star2{
-    right: 2%;
+    right: 8%;
     top:170%;
     z-index: 999;
 }
@@ -512,7 +519,7 @@ display: none;
 
 
 #projects .title-text .figure-star{
-    left: 70%;
+    left: 65%;
     top: 90px;
 }
 
